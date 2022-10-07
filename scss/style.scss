@@ -13,6 +13,11 @@ body{
      width: $container__width;
 }
 
+.btn{
+     @include btn(18px, white, $purple, 18px 27px);
+     margin-right: 32px;
+}
+
 .btn__inverse{
      @include btn(16px, $purple, white, 14px 16px);
      border: 1px solid $purple;

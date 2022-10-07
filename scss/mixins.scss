@@ -22,7 +22,7 @@
      border-radius: 8px;
 }
 
-@mixin title($maw-w){
+@mixin title($maw-w: 100%){
      font-weight: 900;
      font-size: 46px;
      line-height: 54px;

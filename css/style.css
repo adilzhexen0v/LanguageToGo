@@ -9,6 +9,16 @@ body {
   width: 1440px;
 }
 
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #78258D;
+  padding: 18px 27px;
+  border-radius: 8px;
+  margin-right: 32px;
+}
+
 .btn__inverse {
   display: inline-block;
   font-size: 16px;

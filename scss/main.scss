@@ -26,10 +26,6 @@
      }
      .header__btns{
           @include flex($jc: flex-start);
-          .header__btn:first-child{
-               @include btn(18px, white, $purple, 18px 27px);
-               margin-right: 32px;
-          }
           .header__btn:last-child{
                @include flex($jc: flex-start);
                .play{
@@ -141,4 +137,55 @@
                background-color: $purple;
           }
      }
+}
+
+.whom{
+     position: relative;
+     margin-bottom: 120px;
+     .bg__message{
+          position: absolute;
+          top: 0;
+          left: 0;
+     }
+     &__list{
+          @include flex($ai: flex-start);
+          .whom__title{
+               max-width: 453px;
+               .title{
+                    @include title();
+                    margin-bottom: 27px;
+               }
+               p{
+                    @include text(20px, 28px, 500, $gray);
+                    margin-bottom: 40px;
+               }
+               span{
+                    color: $blue;
+               }
+          }
+          .whom__content{
+               &__row{
+                    @include flex();
+                    margin-bottom: 80px;
+                    .whom__content__item:first-child{
+                         margin-right: 120px;
+                    }
+                    &:last-child{
+                         margin-bottom: 0;
+                    }
+               }
+               &__item{
+                    max-width: 374px;
+                    .item__title{
+                         @include text(24px, 32px, 700, $black);
+                         margin-top: 16px;
+                         margin-bottom: 10px;
+                    }
+                    .item__text{
+                         @include text(16px, 24px, 500, $gray);
+                    }
+               }
+          }
+     }
+
 }
