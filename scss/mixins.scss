@@ -20,6 +20,13 @@
      background-color: $bg;
      padding: $padding;
      border-radius: 8px;
+     border: 1px solid $bg;
+     transition: 0.25s ease;
+     &:hover{
+          cursor: pointer;
+          color: $bg;
+          background-color: $color;
+     }
 }
 
 @mixin title($maw-w: 100%){

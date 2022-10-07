@@ -16,7 +16,15 @@ body {
   background-color: #78258D;
   padding: 18px 27px;
   border-radius: 8px;
+  border: 1px solid #78258D;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
   margin-right: 32px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #78258D;
+  background-color: white;
 }
 
 .btn__inverse {
@@ -26,9 +34,16 @@ body {
   background-color: white;
   padding: 14px 16px;
   border-radius: 8px;
-  border: 1px solid #78258D;
+  border: 1px solid white;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
+  border: 1px solid #78258D;
+  transition: 0.25s ease;
+}
+.btn__inverse:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #78258D;
 }
 .btn__inverse:hover {
   color: white;
@@ -86,4 +101,12 @@ nav .nav__link:hover {
   background-color: #78258D;
   padding: 12px 18px;
   border-radius: 8px;
+  border: 1px solid #78258D;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+.nav__btn:hover {
+  cursor: pointer;
+  color: #78258D;
+  background-color: white;
 }

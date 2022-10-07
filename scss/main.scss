@@ -94,6 +94,7 @@
                          @include flex();
                          .card__link{
                               @include text(16px, 24px, 600, $purple);
+                              transition: 0.2s ease;
                               span{
                                    margin-left: 8px;
                               }
@@ -143,6 +144,7 @@
      position: relative;
      margin-bottom: 120px;
      .bg__message{
+          z-index: 0;
           position: absolute;
           top: 0;
           left: 0;
@@ -187,5 +189,53 @@
                }
           }
      }
+     &__btn{
+          position: relative;
+          z-index: 5;
+     }
+}
 
+.why{
+     margin-bottom: 100px;
+     .title{
+          @include title();
+          text-align: center;
+          margin-bottom: 60px;
+     }
+     &__row{
+          @include flex();
+          margin-bottom: 60px;
+          &:last-child{
+               margin-bottom: 0;
+          }
+     }
+     &__item{
+          &__number{
+               @include text(18px, 20px, 700, white);
+               display: inline-block;
+               padding: 4px 22px;
+               border-radius: 100px;
+               margin-bottom: 22px;
+          }
+          &__title{
+               @include text(36px, 40px, 700, $black);
+               margin-bottom: 20px;
+          }
+          &__text{
+               @include text(20px, 28px, 500, $gray);
+               max-width: 540px;
+          }     
+          .blue{
+               background-color: $blue;
+          }
+          .purple{
+               background-color: $purple;
+          }
+          .red{
+               background-color: $red;
+          }
+     }
+     &__btn{
+          margin-top: 40px;
+     }
 }

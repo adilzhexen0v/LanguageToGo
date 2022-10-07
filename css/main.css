@@ -185,6 +185,8 @@
   line-height: 24px;
   font-weight: 600;
   color: #78258D;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 .all__courses__list .all__courses__row .all__courses__card .card__links .card__link span {
   margin-left: 8px;
@@ -242,6 +244,7 @@
   margin-bottom: 120px;
 }
 .whom .bg__message {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -312,4 +315,72 @@
   line-height: 24px;
   font-weight: 500;
   color: #585858;
+}
+.whom__btn {
+  position: relative;
+  z-index: 5;
+}
+
+.why {
+  margin-bottom: 100px;
+}
+.why .title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 54px;
+  color: #232323;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.why__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+.why__row:last-child {
+  margin-bottom: 0;
+}
+.why__item__number {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  padding: 4px 22px;
+  border-radius: 100px;
+  margin-bottom: 22px;
+}
+.why__item__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 20px;
+}
+.why__item__text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #585858;
+  max-width: 540px;
+}
+.why__item .blue {
+  background-color: #2E90D1;
+}
+.why__item .purple {
+  background-color: #78258D;
+}
+.why__item .red {
+  background-color: #E42125;
+}
+.why__btn {
+  margin-top: 40px;
 }
