@@ -46,3 +46,99 @@
           }
      }
 }
+
+.all__courses{
+     margin-bottom: 200px;
+     &__title{
+          @include flex($ai: flex-end);
+          .title{
+               @include title(650px);
+          }
+     }
+     &__slider{
+          margin: 60px 0;
+          width: 100%;
+          overflow: hidden;
+     }
+     &__slider__move{
+          margin-left: -100%;
+     }
+     &__list{
+          width: 200%;
+          transition: 0.8s ease;
+          @include flex();
+          .all__courses__row{
+               width: 100%;
+               @include flex();
+               .all__courses__card{
+                    max-width: 453px;
+                    padding: 40px;
+                    border-radius: 10px;
+
+                    .card__title{
+                         @include text(26px, 113%, 700, $black);
+                         margin: 20px 0;
+                    }
+                    .card__length{
+                         @include text(16px, 120%, 400, $gray);
+                         margin-bottom: 5px;
+                         span{
+                              font-weight: 700;
+                         }
+                    }
+                    .card__modules{
+                         @include text(16px, 120%, 400, $gray);
+                         margin-bottom: 25px;
+                         span{
+                              font-weight: 700;
+                         }
+                    }
+                    
+                    .card__links{
+                         @include flex();
+                         .card__link{
+                              @include text(16px, 24px, 600, $purple);
+                              span{
+                                   margin-left: 8px;
+                              }
+                              &:hover{
+                                   color: $blue;
+                              }
+                         }
+                         .card__price{
+                              @include text(20px, 22px, 700, $black);
+                         }
+                    }
+               }
+               .blue{
+                    background-color: #DEF1FF;
+               }
+               .red{
+                    background-color: #FDEDE4;
+               }
+               .light{
+                    background-color: #EFEFEF;
+               }
+          }
+     }
+     &__dots{
+          @include flex($jc: center);
+          .all__courses__dot{
+               width: 12px;
+               height: 12px;
+               border-radius: 100%;
+               background-color: #BB92C6;
+               transition: 0.15s ease;
+               &:first-child{
+                    margin-right: 16px;
+               }
+               &:hover{
+                    cursor: pointer;
+                    background-color: $purple;
+               }
+          }
+          .active__dot{
+               background-color: $purple;
+          }
+     }
+}

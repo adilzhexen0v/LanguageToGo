@@ -13,6 +13,17 @@ body{
      width: $container__width;
 }
 
+.btn__inverse{
+     @include btn(16px, $purple, white, 14px 16px);
+     border: 1px solid $purple;
+     transition: 0.25s ease;
+
+     &:hover{
+          color: white;
+          background-color: $purple;
+     }
+}
+
 /* NavBar */
 nav{
      @include flex();

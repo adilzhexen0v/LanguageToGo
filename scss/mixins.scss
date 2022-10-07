@@ -21,3 +21,12 @@
      padding: $padding;
      border-radius: 8px;
 }
+
+@mixin title($maw-w){
+     font-weight: 900;
+     font-size: 46px;
+     line-height: 54px;
+     color: $black;
+
+     max-width: $maw-w;
+}
