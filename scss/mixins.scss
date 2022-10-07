@@ -1,0 +1,23 @@
+@import 'variables';
+
+@mixin text($size: 20px, $lineHeight: 35px, $weight: 600, $color: $black) {
+     font-size: $size;
+     line-height: $lineHeight;
+     font-weight: $weight;
+     color: $color;
+}
+
+@mixin flex($jc: space-between, $ai: center) {
+     display: flex;
+     justify-content: $jc;
+     align-items: $ai;
+}
+
+@mixin btn($size: 16px, $color: white, $bg: $purple, $padding: 12px 18px) {
+     display: inline-block;
+     font-size: $size;
+     color: $color;
+     background-color: $bg;
+     padding: $padding;
+     border-radius: 8px;
+}

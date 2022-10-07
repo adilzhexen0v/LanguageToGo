@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.header{
+     padding: 100px 0;
+}
+
+.header__list{
+     @include flex();
+}
+
+.header__part:first-child{
+     .lan_to_go{
+          @include text(18px, 22px, 600, $blue);
+          margin-bottom: 15px;
+     }
+     h1{
+          @include text(60px, 70px, 900, $black);
+          max-width: 680px;
+          margin-bottom: 20px;
+     }
+     p{
+          @include text(20px, 35px, 500, #828282);
+          margin-bottom: 56px;
+          max-width: 490px;
+     }
+     .header__btns{
+          @include flex($jc: flex-start);
+          .header__btn:first-child{
+               @include btn(18px, white, $purple, 18px 27px);
+               margin-right: 32px;
+          }
+          .header__btn:last-child{
+               @include flex($jc: flex-start);
+               .play{
+                    @include flex($jc: center);
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100%;
+                    background-color: #FFEFEF;
+                    margin-right: 12px;
+               }
+               span{
+                    @include text(16px, 24px, 500, $gray);
+               }
+          }
+     }
+}

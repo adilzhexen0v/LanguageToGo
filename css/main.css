@@ -1,0 +1,92 @@
+.header {
+  padding: 100px 0;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__part:first-child .lan_to_go {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #2E90D1;
+  margin-bottom: 15px;
+}
+.header__part:first-child h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 900;
+  color: #232323;
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+.header__part:first-child p {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #828282;
+  margin-bottom: 56px;
+  max-width: 490px;
+}
+.header__part:first-child .header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__part:first-child .header__btns .header__btn:first-child {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #78258D;
+  padding: 18px 27px;
+  border-radius: 8px;
+  margin-right: 32px;
+}
+.header__part:first-child .header__btns .header__btn:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__part:first-child .header__btns .header__btn:last-child .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFEFEF;
+  margin-right: 12px;
+}
+.header__part:first-child .header__btns .header__btn:last-child span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #585858;
+}
