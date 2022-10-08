@@ -2,7 +2,7 @@
 @import "mixins";
 
 .header{
-     padding: 100px 0;
+     padding: $mb 0;
 }
 
 .header__list{
@@ -35,16 +35,27 @@
                     border-radius: 100%;
                     background-color: #FFEFEF;
                     margin-right: 12px;
+                    transition: 0.3s ease;
+                    &:hover{
+                         background-color: #faeaea;
+                    }
                }
                span{
                     @include text(16px, 24px, 500, $gray);
+               }
+               &:hover{
+                    cursor: pointer;
+                    span{
+                         transition: 0.2s ease;
+                         color: $red;
+                    }
                }
           }
      }
 }
 
 .all__courses{
-     margin-bottom: 200px;
+     margin-bottom: $mb * 2;
      &__title{
           @include flex($ai: flex-end);
           .title{
@@ -142,7 +153,7 @@
 
 .whom{
      position: relative;
-     margin-bottom: 120px;
+     margin-bottom: $mb + 20px;
      .bg__message{
           z-index: 0;
           position: absolute;
@@ -196,7 +207,7 @@
 }
 
 .why{
-     margin-bottom: 100px;
+     margin-bottom: $mb;
      .title{
           @include title();
           text-align: center;
@@ -237,5 +248,50 @@
      }
      &__btn{
           margin-top: 40px;
+     }
+}
+
+.promo{
+     margin-bottom: $mb;
+     &__row{
+          @include flex();
+          max-width: 100%;
+          background: linear-gradient(135deg, rgba(46, 144, 209, 0.1) 0%, rgba(120, 37, 141, 0.1) 100%);
+          padding: 90px;
+          border-radius: 40px;
+     }
+     &__part{
+          &:last-child{
+               max-width: 600px;
+          }
+     }
+     &__title{
+          @include title();
+          margin-bottom: 24px;
+          span{
+               background: $gradient;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+          }
+     }
+     &__bullet{
+          @include flex(flex-start, flex-start);
+          margin-bottom: 16px;
+          &:last-child{
+               margin-bottom: 0;
+          }
+          div{
+               display: block;
+               width: 16px;
+               height: 16px;
+               border-radius: 100%;
+               background: $gradient;
+               margin-top: 8px;
+               margin-right: 18px;
+          }
+          p{
+               max-width: 560px;
+               @include text(20px, 28px, 500, $gray);
+          }
      }
 }

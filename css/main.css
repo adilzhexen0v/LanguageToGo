@@ -74,12 +74,25 @@
   border-radius: 100%;
   background-color: #FFEFEF;
   margin-right: 12px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header__part:first-child .header__btns .header__btn:last-child .play:hover {
+  background-color: #faeaea;
 }
 .header__part:first-child .header__btns .header__btn:last-child span {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #585858;
+}
+.header__part:first-child .header__btns .header__btn:last-child:hover {
+  cursor: pointer;
+}
+.header__part:first-child .header__btns .header__btn:last-child:hover span {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #E42125;
 }
 
 .all__courses {
@@ -383,4 +396,70 @@
 }
 .why__btn {
   margin-top: 40px;
+}
+
+.promo {
+  margin-bottom: 100px;
+}
+.promo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  background: linear-gradient(135deg, rgba(46, 144, 209, 0.1) 0%, rgba(120, 37, 141, 0.1) 100%);
+  padding: 90px;
+  border-radius: 40px;
+}
+.promo__part:last-child {
+  max-width: 600px;
+}
+.promo__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 54px;
+  color: #232323;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+.promo__title span {
+  background: linear-gradient(135deg, #2E90D1 0%, #78258D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.promo__bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 16px;
+}
+.promo__bullet:last-child {
+  margin-bottom: 0;
+}
+.promo__bullet div {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #2E90D1 0%, #78258D 100%);
+  margin-top: 8px;
+  margin-right: 18px;
+}
+.promo__bullet p {
+  max-width: 560px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #585858;
 }
