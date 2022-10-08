@@ -969,3 +969,115 @@
   background-color: #78258D;
   color: white;
 }
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer__part:nth-child(1) .footer__text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  max-width: 290px;
+}
+.footer__part:nth-child(1) .footer__brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__part:nth-child(1) .footer__brands img {
+  margin-right: 14px;
+}
+.footer__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+.footer__link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.footer__link:hover {
+  opacity: 1;
+}
+.footer__phone {
+  font-size: 18px;
+  line-height: 113%;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.01em;
+}
+.footer__contact {
+  font-size: 16px;
+  line-height: 113%;
+  font-weight: 400;
+  color: white;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+.footer__socials {
+  margin-top: 40px;
+}
+.footer__socials i {
+  opacity: 0.8;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.footer__socials i:hover {
+  opacity: 1;
+}
+.footer__bottom {
+  padding: 12px 0;
+  background-color: #232323;
+}
+.footer__bottom__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__bottom__part div,
+.footer__bottom__part a {
+  color: white;
+  opacity: 0.8;
+}
+.footer__bottom__part a {
+  margin-left: 40px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.footer__bottom__part a:hover {
+  opacity: 1;
+}
