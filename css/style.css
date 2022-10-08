@@ -4,6 +4,10 @@ body {
   font-family: "Gilroy", sans-serif;
 }
 
+.none {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   width: 1440px;
