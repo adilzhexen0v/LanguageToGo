@@ -33,6 +33,16 @@ body{
      }
 }
 
+.blue{
+     background-color: #DEF1FF;
+}
+.red{
+     background-color: #FDEDE4;
+}
+.light{
+     background-color: #EFEFEF;
+}
+
 /* NavBar */
 nav{
      @include flex();

@@ -28,7 +28,7 @@ body {
 .btn:hover {
   cursor: pointer;
   color: #78258D;
-  background-color: white;
+  background-color: inherit;
 }
 
 .btn__inverse {
@@ -47,11 +47,23 @@ body {
 .btn__inverse:hover {
   cursor: pointer;
   color: white;
-  background-color: #78258D;
+  background-color: inherit;
 }
 .btn__inverse:hover {
   color: white;
   background-color: #78258D;
+}
+
+.blue {
+  background-color: #DEF1FF;
+}
+
+.red {
+  background-color: #FDEDE4;
+}
+
+.light {
+  background-color: #EFEFEF;
 }
 
 /* NavBar */
@@ -112,5 +124,5 @@ nav .nav__link:hover {
 .nav__btn:hover {
   cursor: pointer;
   color: #78258D;
-  background-color: white;
+  background-color: inherit;
 }
