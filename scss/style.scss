@@ -72,3 +72,86 @@ nav{
      @include btn();
 }
 
+/* Footer */
+.footer{
+     padding: 80px;
+     background-color: $purple;
+     color: white;
+     &__row{
+          @include flex($ai: flex-start);
+     }
+     &__part{
+          &:nth-child(1){
+               .footer__text{
+                    @include text(14px, 17px, 500, white);
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    max-width: 290px;
+               }
+               .footer__brands{
+                    @include flex($jc: flex-start);
+                    img{
+                         margin-right: 14px;
+                    }
+               }
+          }
+     }
+     &__title{
+          @include text(24px, 32px, 700, white);
+          margin-bottom: 12px;
+     }
+     &__link{
+          display: block;
+          @include text(16px, 24px, 400, white);
+          opacity: 0.8;
+          margin-bottom: 4px;
+          transition: 0.2s ease;
+          &:hover{
+               opacity: 1;
+          }
+     }
+     &__phone{
+          @include text(18px, 113%, 700, white);
+          letter-spacing: 0.01em;
+     }
+     &__contact{
+          @include text(16px, 113%, 400, white);
+          opacity: 0.8;
+          margin-top: 15px;
+     }
+     &__socials{
+          margin-top: 40px;
+          i{
+               opacity: 0.8;
+               color: white;
+               font-size: 20px;
+               margin-right: 20px;
+               transition: 0.2s ease;
+               &:hover{
+                    opacity: 1;
+               }
+          }
+     }
+
+     &__bottom{
+          padding: 12px 0;
+          background-color: $black;
+          &__row{
+               @include flex();
+          }
+          &__part{
+               div,
+               a{
+                    color: white;
+                    opacity: 0.8;
+               }
+               a{
+                    margin-left: 40px;
+                    transition: 0.2s ease;
+                    &:hover{
+                         opacity: 1;
+                    }
+               }
+          }
+     }
+}

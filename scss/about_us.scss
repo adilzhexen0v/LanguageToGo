@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.page__links{
+     @include text(14px, 24px, 400, $lightGray);
+     @include flex($jc: flex-start);
+     margin: 36px 0;
+     a{
+          color: $purple;
+          text-decoration: underline;
+     }
+     span{
+          font-size: 24px;
+          margin: 0 16px;
+     }
+}
+
+.title{
+     @include title();
+     margin-bottom: 10px;
+}
+
+.subtitle{
+     @include text(20px, 28px, 500, $gray);
+     margin-bottom: 56px;
+}
+
+.about__us{
+     &__row{
+          @include flex();
+     }
+     &__part{
+          width: 50%;
+          &:nth-child(odd){
+               margin-right: 40px;
+          }
+          .title{
+               @include text(32px, 42px, 900, $black);
+               margin-bottom: 24px;
+               span{
+                    color: $purple;
+               }
+          }
+          .text{
+               @include text(20px, 28px, 500, $gray);
+          }
+     }
+}
