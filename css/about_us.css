@@ -40,6 +40,9 @@
   margin-bottom: 56px;
 }
 
+.about__us {
+  margin-bottom: 160px;
+}
 .about__us__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +53,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 80px;
+}
+.about__us__row:last-child {
+  margin-bottom: 0;
 }
 .about__us__part {
   width: 50%;

@@ -26,8 +26,13 @@
 }
 
 .about__us{
+     margin-bottom: 160px;
      &__row{
           @include flex();
+          margin-bottom: 80px;
+          &:last-child{
+               margin-bottom: 0;
+          }
      }
      &__part{
           width: 50%;
