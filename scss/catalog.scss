@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.title{
+     margin-bottom: 35px;
+}
+
+.catalog{
+     &__btns{
+          @include flex($jc: flex-start);
+          gap: 15px;
+          margin-bottom: 32px;
+     }
+     &__btn{
+          padding: 5px 20px;
+          background-color: $lightBlue;
+          color: #4f4f4f;
+          border-radius: 4px;
+     }
+     .active__btn{
+          background-color: $purple;
+          color: white;
+     }
+     &__list{
+          @include flex($ai: flex-start);
+     }
+     &__part{
+          &:first-child{
+               width: 75%;
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-gap: 40px;     
+          }
+          &:last-child{
+               width: 25%;
+          }
+     }
+     &__item{
+          height: 200px;
+          background-color: $lightBlue;
+     }
+}
