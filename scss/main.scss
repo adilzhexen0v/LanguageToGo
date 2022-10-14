@@ -261,6 +261,7 @@
           margin-bottom: 24px;
           span{
                background: $gradient;
+               background-clip: text;
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
           }
