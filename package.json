@@ -1,0 +1,24 @@
+{
+  "name": "languagetogo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpgile.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilzhexen0v/LanguageToGo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilzhexen0v/LanguageToGo/issues"
+  },
+  "homepage": "https://github.com/adilzhexen0v/LanguageToGo#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3"
+  }
+}
