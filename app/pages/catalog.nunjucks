@@ -1,5 +1,10 @@
 {% extends 'layout.nunjucks' %}
 
+{% block head %}
+     <link rel="stylesheet" href="./css/catalog.css">
+     <title>Catalog - Language to go</title>
+{% endblock %}
+
 {% block content %} 
      <main>
           <section class="catalog">

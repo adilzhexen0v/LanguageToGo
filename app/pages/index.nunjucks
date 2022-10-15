@@ -1,7 +1,34 @@
 {% extends 'layout.nunjucks' %}
 
+{% block head %}
+     <link rel="stylesheet" href="./css/main.css">
+     <title>Language to go</title>
+{% endblock %}
+
 {% block content %} 
           <main>
+          <section class="header">
+               <div class="container">
+                    <div class="header__list">
+                         <div class="header__part">
+                              <div class="lan_to_go">Language to go</div>
+                              <h1>Онлайн-школа иностранных языков</h1>
+                              <p>Достигайте своих целей с помощью авторских игровых методик от носителей языка</p>
+                              <div class="header__btns">
+                                   <a href="#" class="header__btn">Попробовать бесплатно</a>
+                                   <div class="header__btn">
+                                        <div class="play"><img src="./img/home/play.png" alt="play_btn"></div>
+                                        <span>Посмотреть промо-ролик</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="header__part">
+                              <img src="./img/home/header_icon.png" alt="header_icon">
+                         </div>
+                    </div>
+               </div>
+          </section>
+
           <section class="all__courses">
                <div class="container">
                     <div class="all__courses__title">

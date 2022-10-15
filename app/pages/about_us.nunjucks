@@ -1,5 +1,10 @@
 {% extends 'layout.nunjucks' %}
 
+{% block head %}
+     <link rel="stylesheet" href="./css/about_us.css">
+     <title>About us - Language to go</title>
+{% endblock %}
+
 {% block content %} 
           <main>
           <section class="about__us">
