@@ -23,6 +23,13 @@
   background-color: #EFEFFF;
   color: #4f4f4f;
   border-radius: 4px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+.catalog__btn:hover {
+  background-color: #78258D;
+  color: white;
+  cursor: pointer;
 }
 .catalog .active__btn {
   background-color: #78258D;
@@ -111,4 +118,42 @@
   line-height: 22px;
   font-weight: 700;
   color: #232323;
+}
+.catalog .level {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.catalog .level__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 20px;
+}
+.catalog .level__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 18px;
+}
+.catalog .level input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #BC92C6;
+  border-radius: 4px;
+  margin-right: 17px;
+}
+
+.hide {
+  display: none;
 }

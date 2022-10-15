@@ -36,15 +36,14 @@
                     </div>
                     <div class="title">Каталог</div>
                     <div class="catalog__btns">
-                         <div class="catalog__btn active__btn">Все</div>
-                         <div class="catalog__btn">Китайский</div>
-                         <div class="catalog__btn">Английский</div>
-                         <div class="catalog__btn">Немецский</div>
-                         <div class="catalog__btn">Испанский</div>
+                         <div class="catalog__btn active__btn" id="all">Все</div>
+                         <div class="catalog__btn" id="china">Китайский</div>
+                         <div class="catalog__btn" id="german">Немецский</div>
+                         <div class="catalog__btn" id="spain">Испанский</div>
                     </div>
                     <div class="catalog__list">
                          <div class="catalog__part">
-                              <div class="catalog__item blue">
+                              <div class="catalog__item blue german">
                                    <img src="./img/languages/german.png" alt="german">
                                    <div class="card__title">Немецкий для начального уровня</div>
                                    <div class="card__length">Длительность: <span>42 часов</span></div>
@@ -55,7 +54,7 @@
                                         <div class="card__price">От 6250р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item red">
+                              <div class="catalog__item red china">
                                    <img src="./img/languages/china.png" alt="china">
                                    <div class="card__title">Китайский для среднего уровня</div>
                                    <div class="card__length">Длительность: <span>54 часов</span></div>
@@ -66,7 +65,7 @@
                                         <div class="card__price">От 9450р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item light">
+                              <div class="catalog__item light spain">
                                    <img src="./img/languages/spain.png" alt="spain">
                                    <div class="card__title">Испанский для среднего уровня</div>
                                    <div class="card__length">Длительность: <span>36 часов</span></div>
@@ -77,7 +76,7 @@
                                         <div class="card__price">От 4890р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item blue">
+                              <div class="catalog__item blue china">
                                    <img src="./img/languages/china.png" alt="сhina">
                                    <div class="card__title">Китайский для продвинутого уровня</div>
                                    <div class="card__length">Длительность: <span>84 часов</span></div>
@@ -88,7 +87,7 @@
                                         <div class="card__price">От 8250р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item red">
+                              <div class="catalog__item red spain">
                                    <img src="./img/languages/spain.png" alt="spain">
                                    <div class="card__title">Испанский для начального уровня</div>
                                    <div class="card__length">Длительность: <span>36 часов</span></div>
@@ -99,7 +98,7 @@
                                         <div class="card__price">От 3990р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item light">
+                              <div class="catalog__item light german">
                                    <img src="./img/languages/german.png" alt="german">
                                    <div class="card__title">Немецкий для среднего уровня</div>
                                    <div class="card__length">Длительность: <span>56 часов</span></div>
@@ -110,7 +109,7 @@
                                         <div class="card__price">От 7890р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item light">
+                              <div class="catalog__item light spain">
                                    <img src="./img/languages/spain.png" alt="spain">
                                    <div class="card__title">Испанский для продвинутого уровня</div>
                                    <div class="card__length">Длительность: <span>84 часов</span></div>
@@ -121,7 +120,7 @@
                                         <div class="card__price">От 13490р</div>
                                    </div>
                               </div>
-                              <div class="catalog__item blue">
+                              <div class="catalog__item blue german">
                                    <img src="./img/languages/german.png" alt="german">
                                    <div class="card__title">Немецский для продвинутого уровня</div>
                                    <div class="card__length">Длительность: <span>63 часов</span></div>
@@ -136,7 +135,15 @@
                          <div class="catalog__part">
                               <div class="level">
                                    <div class="level__title">Уровень</div>
-                                   <input type="checkbox" name="" id="">
+                                   <div class="level__row">
+                                        <input type="checkbox" name="level"> Начальный
+                                   </div>
+                                   <div class="level__row">
+                                        <input type="checkbox" name="level"> Средний
+                                   </div>
+                                   <div class="level__row">
+                                        <input type="checkbox" name="level"> Высокий
+                                   </div>
                               </div>
                          </div>
                     </div>
@@ -206,5 +213,6 @@
                </div>
           </div>
      </div>
+     <script src="./js/catalog.js"></script>
 </body>
 </html>

@@ -17,6 +17,13 @@
           background-color: $lightBlue;
           color: #4f4f4f;
           border-radius: 4px;
+          transition: 0.25s ease;
+
+          &:hover{
+               background-color: $purple;
+               color: white;
+               cursor: pointer; 
+          }
      }
      .active__btn{
           background-color: $purple;
@@ -78,4 +85,28 @@
                }
           }
      }
+     .level{
+          padding: 30px;
+          margin-bottom: 30px;
+          &__title{
+               @include text(20px, 28px, 500, black);
+               margin-bottom: 20px;
+          }
+          &__row{
+               @include flex($jc: flex-start);
+               @include text(16px, 24px, 500, #333);
+               margin-bottom: 18px;
+          }
+          input[type="checkbox"]{
+               width: 24px;
+               height: 24px;
+               border: 1px solid #BC92C6;
+               border-radius: 4px;
+               margin-right: 17px;
+          }
+     }
+}
+
+.hide{
+     display: none;
 }
