@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function(){
                btn.textContent = '+';
           }
      }
-     function closeFaq(index){
+     function closeFaq(){
           faqItems.forEach(item => {
                item.classList.remove('faq__active');
           });
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function(){
                     changeFaqBtn(faqBtns[index]);
                } else {
                     for(let i = 0; i < faqBtns.length; i++) {
-                         closeFaq(i);
+                         closeFaq();
                     }
                     openFaq(index);
                     faqBtns.forEach(btn => {
@@ -74,5 +74,5 @@ window.addEventListener('DOMContentLoaded', function(){
                     });
                }
           });
-     })
+     });
 });

@@ -2,6 +2,7 @@
 
 {% block head %}
      <link rel="stylesheet" href="./css/main.css">
+     <script defer src="./js/main.js"></script>
      <title>Language to go</title>
 {% endblock %}
 
@@ -15,7 +16,7 @@
                               <h1>Онлайн-школа иностранных языков</h1>
                               <p>Достигайте своих целей с помощью авторских игровых методик от носителей языка</p>
                               <div class="header__btns">
-                                   <a href="#" class="header__btn">Попробовать бесплатно</a>
+                                   <a href="#" class="header__btn btn">Попробовать бесплатно</a>
                                    <div class="header__btn">
                                         <div class="play"><img src="./img/home/play.png" alt="play_btn"></div>
                                         <span>Посмотреть промо-ролик</span>
@@ -33,7 +34,7 @@
                <div class="container">
                     <div class="all__courses__title">
                          <h2 class="title">Курсы иностранных языков для любого уровня</h2>
-                         <a href="#!" class="btn__inverse">Все курсы</a>
+                         <a href="./catalog.html" class="btn__inverse">Все курсы</a>
                     </div>
 
                     <div class="all__courses__slider">
@@ -46,7 +47,7 @@
                                              <div class="card__length">Длительность: <span>42 часов</span></div>
                                              <div class="card__modules">Модули: <span>3</span></div>
                                              <div class="card__links">
-                                                  <a href="#!" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 6250р</div>
                                              </div>
@@ -59,7 +60,7 @@
                                              <div class="card__length">Длительность: <span>54 часов</span></div>
                                              <div class="card__modules">Модули: <span>4</span></div>
                                              <div class="card__links">
-                                                  <a href="#!" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 9450р</div>
                                              </div>
@@ -72,7 +73,7 @@
                                              <div class="card__length">Длительность: <span>36 часов</span></div>
                                              <div class="card__modules">Модули: <span>2</span></div>
                                              <div class="card__links">
-                                                  <a href="#!" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 4890р</div>
                                              </div>
@@ -88,7 +89,7 @@
                                              <div class="card__length">Длительность: <span>84 часов</span></div>
                                              <div class="card__modules">Модули: <span>3</span></div>
                                              <div class="card__links">
-                                                  <a href!="#" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href!="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 8250р</div>
                                              </div>
@@ -101,7 +102,7 @@
                                              <div class="card__length">Длительность: <span>36 часов</span></div>
                                              <div class="card__modules">Модули: <span>2</span></div>
                                              <div class="card__links">
-                                                  <a href="#!" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 3990р</div>
                                              </div>
@@ -114,7 +115,7 @@
                                              <div class="card__length">Длительность: <span>56 часов</span></div>
                                              <div class="card__modules">Модули: <span>3</span></div>
                                              <div class="card__links">
-                                                  <a href="#!" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                  <a href="./course.html" class="card__link">Узнать подробнее <span><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                                   </span></a>
                                                   <div class="card__price">От 7890р</div>
                                              </div>
@@ -316,28 +317,8 @@
                </div>
           </section>
 
-          <section class="register">
-               <div class="container">
-                    <div class="register__row">
-                         <div class="register__part">
-                              <h2>Регистрируйтесь и приступайте к первому бесплатному уроку</h2>
-                              <span>Телефон *</span>
-                              <form action="#!">
-                                   <input type="tel" class="input__tel" placeholder="+7 (___) ___-__-__">
-                                   <input type="submit" value="Начать обучение" class="btn__tel">
-                              </form>
-                              <div class="register__checkbox">
-                                   <input type="checkbox" name="check">
-                                   <div>Отправляя заявку, я соглашаюсь с <a href="#!">политикой конфиденциальности и пользовательским соглашением</a></div>
-                              </div>
-                         </div>
-                         <div class="register__part">
-                              <img src="./img/home/register.png" alt="register">
-                         </div>
-                    </div>
-               </div>
-          </section>
-
+          {% include 'register.nunjucks' %}
+          
           <section class="news">
                <div class="container">
                     <div class="news__title">

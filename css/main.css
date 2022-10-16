@@ -420,6 +420,7 @@
 }
 .promo__title span {
   background: linear-gradient(135deg, #2E90D1 0%, #78258D 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

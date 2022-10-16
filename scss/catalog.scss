@@ -40,6 +40,9 @@
                grid-gap: 40px;     
           }
           &:last-child{
+               position: sticky;
+               top: 0;
+               float: right;
                width: 25%;
           }
      }

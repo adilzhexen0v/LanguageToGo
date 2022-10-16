@@ -55,6 +55,9 @@
   grid-gap: 40px;
 }
 .catalog__part:last-child {
+  position: sticky;
+  top: 0;
+  float: right;
   width: 25%;
 }
 .catalog__item {

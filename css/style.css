@@ -1,5 +1,19 @@
 @import url("../css/reset.css");
 @import url("../css/style.css");
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFEFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #78258D;
+  border-radius: 10px;
+  border: 3px solid #EFEFFF;
+}
+
 body {
   font-family: "Gilroy", sans-serif;
 }
@@ -68,7 +82,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 36px 0;
+  margin: 32px 0;
 }
 .page__links a {
   color: #78258D;
