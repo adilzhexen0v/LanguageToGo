@@ -254,3 +254,39 @@ nav{
           }
      }
 }
+
+/* Comment */
+.comment{
+     width: 100%;
+     padding: 40px 65px;
+     border-radius: 10px;
+     margin-bottom: 16px;
+     &:last-child{
+          margin-bottom: 0;
+     }
+     &__author__stars{
+          @include flex();
+          margin-bottom: 20px;
+     }
+     &__author{
+          @include text(20px, 28px, 500, $black);
+          span{
+               margin-top: 4px;
+               @include text(16px, 24px, 500, $lightGray);
+          }
+     }
+     &__stars{
+          @include flex($jc: flex-end);
+          i{
+               margin-left: 10px;
+               font-size: 24px;
+               color: $purple;
+          }
+     }
+     &__text{
+          @include text(16px, 24px, 500, #4f4f4f);
+     }
+     &__none{
+          display: none;
+     }
+}

@@ -297,3 +297,56 @@
 .course .top__none {
   display: none;
 }
+.course .howitworks {
+  margin-bottom: 50px;
+}
+.course .howitworks .course__subtitle {
+  margin-bottom: 32px;
+}
+.course .howitworks__item {
+  padding: 40px;
+  gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.course .howitworks__item__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #232323;
+}
+.course .howitworks__item__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #828282;
+}
+.course .howitworks__item:last-child {
+  margin-bottom: 0;
+}
+.course .comments {
+  margin-bottom: 50px;
+}
+.course .comments .course__subtitle {
+  margin-bottom: 0;
+}
+.course .comments__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}

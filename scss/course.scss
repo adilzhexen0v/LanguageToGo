@@ -193,4 +193,36 @@
                display: none;
           }
      }
+     .howitworks{
+          margin-bottom: 50px;
+          .course__subtitle{
+               margin-bottom: 32px;
+          }
+          &__item{
+               padding: 40px;
+               gap: 40px;
+               @include flex($jc: flex-start);
+               margin-bottom: 16px;
+               &__title{
+                    @include text(24px, 32px, 700, $black);
+               }
+               &__subtitle{
+                    @include text(16px, 24px, 400, $lightGray);
+               }
+               &:last-child{
+                    margin-bottom: 0;
+               }
+          }
+     }
+     .comments{
+          margin-bottom: 50px;
+          .course__subtitle{
+               margin-bottom: 0;
+          }
+          &__row{
+               @include flex();
+               margin-bottom: 32px;
+          }
+
+     }
 }

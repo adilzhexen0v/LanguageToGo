@@ -57,3 +57,31 @@ topBtn.addEventListener('click', () => {
 });
 
 closeTop();
+
+/* Comments */
+const commentsItems = document.querySelectorAll('.comment');
+const commentsBtn = document.querySelector('#comment__btn');
+let commentsChecker = 0;
+
+function openComments(){
+     for(let i = commentsItems.length - 2; i < commentsItems.length; i++) {
+          commentsItems[i].classList.remove('comment__none');
+     }
+}
+
+function closeComments(){
+     for(let i = commentsItems.length - 2; i < commentsItems.length; i++) {
+          commentsItems[i].classList.add('comment__none');
+     }
+}
+
+commentsBtn.addEventListener('click', () => {
+     commentsChecker++;
+     if(commentsChecker % 2 == 0) {
+          closeComments();
+     } else{
+          openComments();
+     }
+});
+
+closeComments();
