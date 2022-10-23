@@ -6,29 +6,8 @@
 }
 
 .catalog{
-     margin-bottom: 80px;
-     &__btns{
-          @include flex($jc: flex-start);
-          gap: 15px;
-          margin-bottom: 32px;
-     }
-     &__btn{
-          padding: 5px 20px;
-          background-color: $lightBlue;
-          color: #4f4f4f;
-          border-radius: 4px;
-          transition: 0.25s ease;
-
-          &:hover{
-               background-color: $purple;
-               color: white;
-               cursor: pointer; 
-          }
-     }
-     .active__btn{
-          background-color: $purple;
-          color: white;
-     }
+     
+     
      &__list{
           @include flex($ai: flex-start);
      }

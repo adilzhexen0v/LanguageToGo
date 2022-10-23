@@ -4,6 +4,7 @@
 
 
 .course{
+     margin-bottom: $mb;
      &__subtitle{
           @include text(32px, 54px, 900, $black);
           margin-bottom: 30px;
@@ -224,5 +225,11 @@
                margin-bottom: 32px;
           }
 
+     }
+}
+
+.similar{
+     &__row{
+          @include flex();
      }
 }

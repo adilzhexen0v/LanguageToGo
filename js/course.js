@@ -44,7 +44,7 @@ function closeTop(){
      for(let i = topItems.length - 2; i < topItems.length; i++) {
           topItems[i].classList.add('top__none');
      }
-     topBtn.textContent = 'Скрыть всю статистику';
+     topBtn.textContent = 'Смотреть всю статистику';
 }
 
 topBtn.addEventListener('click', () => {
@@ -85,3 +85,7 @@ commentsBtn.addEventListener('click', () => {
 });
 
 closeComments();
+
+// postgres://username:password@host:port/db_name
+// "user":"Dinora",
+// "password"

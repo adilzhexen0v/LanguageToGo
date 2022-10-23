@@ -1,3 +1,6 @@
+.course {
+  margin-bottom: 100px;
+}
 .course__subtitle {
   font-size: 32px;
   line-height: 54px;
@@ -349,4 +352,16 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 32px;
+}
+
+.similar__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

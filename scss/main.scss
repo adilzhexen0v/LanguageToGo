@@ -56,6 +56,17 @@
 
 .all__courses{
      margin-bottom: $mb * 2;
+     &__row{
+          @include flex();
+          height: 100%;
+          gap: 40px;
+     }
+     &__card{
+          width: calc(100%/3);
+          padding: 40px;
+          height: 100%;
+          border-radius: 10px;
+     }
      &__title{
           @include flex($ai: flex-end);
           .title{
@@ -77,47 +88,7 @@
           .all__courses__row{
                width: 100%;
                @include flex();
-               .all__courses__card{
-                    max-width: 453px;
-                    padding: 40px;
-                    border-radius: 10px;
-
-                    .card__title{
-                         @include text(26px, 113%, 700, $black);
-                         margin: 20px 0;
-                    }
-                    .card__length{
-                         @include text(16px, 120%, 400, $gray);
-                         margin-bottom: 5px;
-                         span{
-                              font-weight: 700;
-                         }
-                    }
-                    .card__modules{
-                         @include text(16px, 120%, 400, $gray);
-                         margin-bottom: 25px;
-                         span{
-                              font-weight: 700;
-                         }
-                    }
-                    
-                    .card__links{
-                         @include flex();
-                         .card__link{
-                              @include text(16px, 24px, 600, $purple);
-                              transition: 0.2s ease;
-                              span{
-                                   margin-left: 8px;
-                              }
-                              &:hover{
-                                   color: $blue;
-                              }
-                         }
-                         .card__price{
-                              @include text(20px, 22px, 700, $black);
-                         }
-                    }
-               }
+               
           }
      }
      &__dots{
@@ -391,61 +362,13 @@
 
 .news{
      margin-bottom: $mb;
-     &__title{
-          @include flex();
-          .title{
-               @include title();
-               margin-bottom: 60px;
-          }
+     &__item{
+          width: calc(100% / 3);
      }
      &__row{
           @include flex($ai:flex-start);
+          gap: 40px;
           width: 100%;
-     }
-     &__item{
-          width: calc(100% / 3);
-          margin-right: 40px;
-          padding: 40px;
-          border: 1px solid #EFEFFF;
-          box-shadow: 0px 4px 20px #F7F6FB;
-          border-radius: 20px;
-          &:last-child{
-               margin-right: 0;
-          }
-          &__title{
-               @include text(24px, 32px, 700, $black);
-               margin-bottom: 6px;
-          }
-          &__date{
-               @include text(16px, 24px, 500, $blue);
-               margin-bottom: 10px;
-          }
-          &__text{
-               @include text(16px, 24px, 500, $gray);
-               margin-bottom: 25px;
-          }
-          &__links{
-               @include flex();
-          }
-          &__type{
-               @include text(16px, 24px, 500, #333);
-               padding: 4px 20px;
-               border-radius: 4px;
-               background-color: $lightBlue;
-          }
-          .red__type{
-               background-color: #FDEDE4 !important;
-          }
-          &__link{
-               @include text(16px, 24px, 600, $purple);
-               transition: 0.25s ease;
-               i{
-                    margin-left: 15px;
-               }
-               &:hover{
-                    color: $blue;
-               }
-          }
      }
 }
 

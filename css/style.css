@@ -101,6 +101,9 @@ body {
   max-width: 100%;
   margin-bottom: 10px;
 }
+.title span {
+  color: #78258D;
+}
 
 .subtitle {
   font-size: 20px;
@@ -461,4 +464,198 @@ nav .nav__link:hover {
 }
 .comment__none {
   display: none;
+}
+
+/* Cards */
+.card {
+  max-width: 453px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.card__title {
+  font-size: 26px;
+  line-height: 113%;
+  font-weight: 700;
+  color: #232323;
+  margin: 20px 0;
+}
+.card__length {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #585858;
+  margin-bottom: 5px;
+}
+.card__length span {
+  font-weight: 700;
+}
+.card__modules {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #585858;
+  margin-bottom: 25px;
+}
+.card__modules span {
+  font-weight: 700;
+}
+.card__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__links .card__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #78258D;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card__links .card__link span {
+  margin-left: 8px;
+}
+.card__links .card__link:hover {
+  color: #2E90D1;
+}
+.card__links .card__price {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #232323;
+}
+
+/* News */
+.news {
+  margin-bottom: 100px;
+}
+.news__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news__title .title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 54px;
+  color: #232323;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.news__item {
+  padding: 40px;
+  border: 1px solid #EFEFFF;
+  -webkit-box-shadow: 0px 4px 20px #F7F6FB;
+          box-shadow: 0px 4px 20px #F7F6FB;
+  border-radius: 20px;
+}
+.news__item:last-child {
+  margin-right: 0;
+}
+.news__item__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 6px;
+}
+.news__item__date {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #2E90D1;
+  margin-bottom: 10px;
+}
+.news__item__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #585858;
+  margin-bottom: 25px;
+}
+.news__item__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news__item__type {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  padding: 4px 20px;
+  border-radius: 4px;
+  background-color: #EFEFFF;
+}
+.news__item .red__type {
+  background-color: #FDEDE4 !important;
+}
+.news__item__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #78258D;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+.news__item__link i {
+  margin-left: 15px;
+}
+.news__item__link:hover {
+  color: #2E90D1;
+}
+
+/* Catalog Btns */
+.catalog {
+  margin-bottom: 80px;
+}
+.catalog__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+.catalog__btn {
+  padding: 5px 20px;
+  background-color: #EFEFFF;
+  color: #4f4f4f;
+  border-radius: 4px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+.catalog__btn:hover {
+  background-color: #78258D;
+  color: white;
+  cursor: pointer;
+}
+
+.active__btn {
+  background-color: #78258D;
+  color: white;
 }

@@ -98,6 +98,25 @@
 .all__courses {
   margin-bottom: 200px;
 }
+.all__courses__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+.all__courses__card {
+  width: 33.3333333333%;
+  padding: 40px;
+  height: 100%;
+  border-radius: 10px;
+}
 .all__courses__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,69 +168,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.all__courses__list .all__courses__row .all__courses__card {
-  max-width: 453px;
-  padding: 40px;
-  border-radius: 10px;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__title {
-  font-size: 26px;
-  line-height: 113%;
-  font-weight: 700;
-  color: #232323;
-  margin: 20px 0;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__length {
-  font-size: 16px;
-  line-height: 120%;
-  font-weight: 400;
-  color: #585858;
-  margin-bottom: 5px;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__length span {
-  font-weight: 700;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__modules {
-  font-size: 16px;
-  line-height: 120%;
-  font-weight: 400;
-  color: #585858;
-  margin-bottom: 25px;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__modules span {
-  font-weight: 700;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__links .card__link {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #78258D;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__links .card__link span {
-  margin-left: 8px;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__links .card__link:hover {
-  color: #2E90D1;
-}
-.all__courses__list .all__courses__row .all__courses__card .card__links .card__price {
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 700;
-  color: #232323;
 }
 .all__courses__dots {
   display: -webkit-box;
@@ -628,24 +584,8 @@
 .news {
   margin-bottom: 100px;
 }
-.news__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.news__title .title {
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 54px;
-  color: #232323;
-  max-width: 100%;
-  margin-bottom: 60px;
+.news__item {
+  width: 33.3333333333%;
 }
 .news__row {
   display: -webkit-box;
@@ -657,77 +597,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 40px;
   width: 100%;
-}
-.news__item {
-  width: 33.3333333333%;
-  margin-right: 40px;
-  padding: 40px;
-  border: 1px solid #EFEFFF;
-  -webkit-box-shadow: 0px 4px 20px #F7F6FB;
-          box-shadow: 0px 4px 20px #F7F6FB;
-  border-radius: 20px;
-}
-.news__item:last-child {
-  margin-right: 0;
-}
-.news__item__title {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #232323;
-  margin-bottom: 6px;
-}
-.news__item__date {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #2E90D1;
-  margin-bottom: 10px;
-}
-.news__item__text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #585858;
-  margin-bottom: 25px;
-}
-.news__item__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.news__item__type {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #333;
-  padding: 4px 20px;
-  border-radius: 4px;
-  background-color: #EFEFFF;
-}
-.news__item .red__type {
-  background-color: #FDEDE4 !important;
-}
-.news__item__link {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #78258D;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-}
-.news__item__link i {
-  margin-left: 15px;
-}
-.news__item__link:hover {
-  color: #2E90D1;
 }
 
 .faq {

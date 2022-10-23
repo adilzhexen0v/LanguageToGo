@@ -323,7 +323,7 @@
                <div class="container">
                     <div class="news__title">
                          <div class="title">Полезные новости и статьи</div>
-                         <a href="#!" class="btn__inverse news__btn">Все новости</a>
+                         <a href="./news.html" class="btn__inverse news__btn">Все новости</a>
                     </div>
                     <div class="news__row">
                          <div class="news__item">
@@ -332,7 +332,7 @@
                               <div class="news__item__text">Для многих стоимость изучения иностранного языка является важным критерием при выборе системы обучения. </div>
                               <div class="news__item__links">
                                    <div class="news__item__type">Новость</div>
-                                   <a href="#!" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                   <a href="./article.html" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                               </div>
                          </div>
                          <div class="news__item">
@@ -341,7 +341,7 @@
                               <div class="news__item__text">Моя команда — профессиональные филологи и педагоги-носители языка, преподаватели зарубежных университетов, которые ...</div>
                               <div class="news__item__links">
                                    <div class="news__item__type red__type">Интересное</div>
-                                   <a href="#!" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                   <a href="./article.html" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                               </div>
                          </div>
                          <div class="news__item">
@@ -350,7 +350,7 @@
                               <div class="news__item__text">Для многих стоимость изучения иностранного языка является важным критерием при выборе системы обучения. </div>
                               <div class="news__item__links">
                                    <div class="news__item__type">Новость</div>
-                                   <a href="#!" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                   <a href="./article.html" class="news__item__link">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                               </div>
                          </div>
                     </div>
