@@ -1,5 +1,4 @@
 @import url("../css/reset.css");
-@import url("../css/style.css");
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -12,6 +11,16 @@
   background: #78258D;
   border-radius: 10px;
   border: 3px solid #EFEFFF;
+}
+
+::-moz-selection {
+  background-color: #78258D;
+  color: #fff;
+}
+
+::selection {
+  background-color: #78258D;
+  color: #fff;
 }
 
 body {

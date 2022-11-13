@@ -10,19 +10,13 @@
           <section class="news">
                <div class="container">
                     <div class="page__links">
-                         <a href="./index.html">Главная</a><span class="arrow__link">></span>Каталог 
+                         <a href="./index.html">Главная</a><span class="arrow__link">></span>Блог 
                     </div>
                     <div class="title">Блог<br><span>Language to go</span></div>
 
                     <div class="news__row">
                          <div class="news__part">
                               <p class="news__description">Будьте в курсе наших событий. Следите за нашими новостями</p>
-                              <div class="catalog__btns">
-                                   <div class="catalog__btn active__btn" id="all">Все</div>
-                                   <div class="catalog__btn" id="china">Новости</div>
-                                   <div class="catalog__btn" id="german">Статьи</div>
-                                   <div class="catalog__btn" id="spain">Интересное</div>
-                              </div>
                               <div class="news__grid">
                                    <div class="news__item">
                                         <div class="news__item__title">Новая система скидок в Language2GO: успейте забрать максимум!</div>
