@@ -2,7 +2,7 @@
 
 {% block head %}
      <link rel="stylesheet" href="./css/about_us.css">
-     <title>About us - Language to go</title>
+     <title>О нас - Language to go</title>
 {% endblock %}
 
 {% block content %} 

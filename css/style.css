@@ -659,3 +659,105 @@ nav .nav__link:hover {
   background-color: #78258D;
   color: white;
 }
+
+/* FAQ */
+.faq__item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 20px rgba(46, 144, 209, 0.08);
+          box-shadow: 0px 5px 20px rgba(46, 144, 209, 0.08);
+  border: 1px solid #EFEFFF;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.faq__item .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #232323;
+}
+.faq__item .question i {
+  color: #78258D;
+}
+.faq__item .question__open {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #78258D;
+  font-weight: 300;
+  font-size: 40px;
+  border-radius: 4px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.faq__item .question__open:hover {
+  cursor: pointer;
+  background-color: #78258D;
+  color: white;
+}
+.faq__item .question__close {
+  border: 1px solid #78258D;
+  background-color: #78258D;
+  color: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.faq__item .question__close:hover {
+  background-color: inherit;
+  color: #78258D;
+}
+.faq__item .answer {
+  display: none;
+  margin-top: 16px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #585858;
+}
+.faq__item .answer__show {
+  display: block;
+}
+.faq__item .answer__fade {
+  -webkit-animation: faq__fade 0.5s ease;
+          animation: faq__fade 0.5s ease;
+}
+@-webkit-keyframes faq__fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes faq__fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.faq__active {
+  background-color: #EFEFFF;
+}

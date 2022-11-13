@@ -3,7 +3,7 @@
 {% block head %}
      <link rel="stylesheet" href="./css/catalog.css">
      <script defer src="./js/catalog.js"></script>
-     <title>Catalog - Language to go</title>
+     <title>Каталог - Language to go</title>
 {% endblock %}
 
 {% block content %} 
