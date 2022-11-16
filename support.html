@@ -6,7 +6,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
      <link rel="stylesheet" href="./css/style.css">
-     {% block head %} {% endblock %}
+     
+     <link rel="stylesheet" href="./css/support.css">
+     <title>Служба поддержки - Language to go</title>
+
      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
      <script src="https://use.fontawesome.com/ab2012437d.js"></script>
 </head>
@@ -28,7 +31,62 @@
           </nav>
      </header>
 
-     {% block content %} {% endblock %}
+      
+     <main>
+          <section class="support">
+               <div class="container">
+                    <div class="page__links">
+                         <a href="./index.html">Главная</a><span class="arrow__link">></span>Служба поддержки 
+                    </div>
+                    <div class="title">Служба поддержки<br><span>Language to go</span></div>
+                    
+                    <div class="support__row">
+                         <div class="support__part">
+                              <div class="subtitle">
+                                   Если у вас возникли трудности по работе сайта, сложности в оплате или есть вопрос, вы можете обратиться в службу поддержки, мы обязательно вам поможем.
+                              </div>
+                              <div class="support__general">
+                                   <div class="support__title">Общая информация</div>
+                                   <div class="support__text">
+                                        Ясность нашей позиции очевидна: консультация с широким активом однозначно определяет каждого участника как способного принимать собственные решения касаемо прогресса профессионального сообщества. Как уже неоднократно упомянуто, сделанные на базе интернет-аналитики выводы призывают нас к новым свершениям, которые, в свою очередь, должны быть объединены в целые кластеры себе подобных. Являясь всего лишь частью общей картины, явные признаки победы институционализации подвергнуты целой серии независимых исследований.
+                                   </div>
+                              </div>
+                              <div class="support__form">
+                                   <div class="support__title">Написать в службу поддержки</div>
+                                   <div class="support__text">
+                                        Оставьте заявку и мы постараемся вам помочь
+                                   </div>
+                                   <form action="#!">
+                                        <div class="form__grid">
+                                             <div class="form__row">
+                                                  <div class="form__part">
+                                                       <label>Имя</label>
+                                                       <input type="text" placeholder="Введите ваше имя">
+                                                  </div>
+                                                  <div class="form__part">
+                                                       <label>Имя</label>
+                                                       <input type="text" placeholder="+7(___)___-__-__">
+                                                  </div>
+                                             </div>
+                                             <div class="form__row">
+                                                  <div class="form__part">
+                                                       <label>Сообщение <span>(не обязательно)</span></label>
+                                                       <textarea placeholder="Расскажите нам о возникшем вопросе"></textarea>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <button class="btn">Оставить заявку</button>
+                                   </form>
+                              </div>
+                         </div>
+                         <div class="support__part">
+                              <img src="./img/support/support_item.png" alt="support_item">
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+
 
      <footer class="footer">
           <div class="container">

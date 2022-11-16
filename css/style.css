@@ -119,7 +119,12 @@ body {
   line-height: 28px;
   font-weight: 500;
   color: #585858;
+  margin-top: 10px;
   margin-bottom: 56px;
+}
+
+main {
+  margin-bottom: 100px;
 }
 
 .blue {

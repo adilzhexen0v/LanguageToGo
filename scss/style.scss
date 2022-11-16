@@ -77,9 +77,13 @@ body{
 
 .subtitle{
      @include text(20px, 28px, 500, $gray);
+     margin-top: 10px;
      margin-bottom: 56px;
 }
 
+main{
+     margin-bottom: $mb;
+}
 
 .blue{
      background-color: #DEF1FF;

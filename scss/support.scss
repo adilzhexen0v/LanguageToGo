@@ -1,0 +1,83 @@
+@import "variables";
+@import "mixins";
+
+.subtitle{
+     max-width: 585px;
+}
+
+.support{
+     &__row{
+          @include flex($ai: flex-start);
+          gap: 40px;
+     }
+     &__part{
+          &:first-child{
+               width: 67%;
+          }
+          &:last-child{
+               position: relative;
+               width: 33%;
+          }
+          img{
+               position: absolute;
+               right: 0;
+          }
+     }
+     &__title{
+          @include text(24px, 32px, 700, $black);
+          margin-bottom: 12px;
+     }
+     &__text{
+          @include text(16px, 24px, 500, $gray);
+          letter-spacing: 0.02em;
+          padding-bottom: 30px;
+     }
+     &__form{
+          margin: 40px 0;
+     }
+}
+
+.form{
+     &__grid{
+          display: grid;
+          label{
+               @include text(15px, 24px, 500, $black);
+               span{
+                    color: $lightBlue;
+               }
+          }
+          input,
+          textarea{
+               display: block;
+               padding: 18px;
+               border: 2px solid #f2f2f2;
+               background: #f2f2f2;
+               border-radius: 8px;
+               margin-top: 8px;
+               width: 100%;
+               @include text(16px, 24px, 500, $black);
+               &:focus{
+                    border: 2px solid $purple;
+                    background: white;
+               }
+               ::placeholder{
+                    @include text(16px, 24px, 500, $lightGray);
+               }
+          }
+          textarea{
+               resize: none;
+               height: 100px;
+          }
+          button{
+               display: inline-block;
+          }
+     }
+     &__row{
+          @include flex();
+          margin-bottom: 24px;
+          gap: 40px;
+     }
+     &__part{
+          width: 100%;
+     }
+}
