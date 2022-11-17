@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixins"; 
+
+.contact{
+     &__row{
+          @include flex($ai: flex-start);
+          gap: 40px;
+     }
+     &__part{
+          &:first-child{
+               width: 33%;
+          }
+          &:last-child{
+               margin: 40px;
+               width: 67%;
+          }
+     }
+     &__title{
+          @include text(24px, 32px, 700, $black);
+          margin-bottom: 12px;
+     }
+     &__text{
+          @include text(16px, 24px, 500, $gray);
+          letter-spacing: 0.02em;
+          margin-bottom: 24px;
+     }
+     &__item{
+          @include flex(flex-start, flex-start);
+          gap: 40px;
+          padding: 35px 40px;
+          background-color: #f9f9f9;
+          border-radius: 20px;
+          margin-bottom: 40px;
+          &:last-child{
+               margin-bottom: 0;
+          }
+          &__title{
+               @include text(20px, 28px, 500, $black);
+               margin-bottom: 8px;
+          }
+          &__subtitle{
+               @include text(16px, 24px, 500, $gray);
+          }
+          &__link{
+               @include text(16px, 24px, 500, $purple);
+               letter-spacing: 0.02em;
+               transition: 0.2s ease;
+               &:hover{
+                    color: $blue;
+               }
+          }
+     }
+     &__socials{
+          i{
+               color: $purple;
+               font-size: 20px;
+               margin-right: 12px;
+               transition: 0.2s ease;
+               &:hover{
+                    color: $blue;
+               }
+          }
+     }
+}
