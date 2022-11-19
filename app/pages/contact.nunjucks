@@ -2,6 +2,7 @@
 
 {% block head %}
      <link rel="stylesheet" href="./css/contact.css">
+     <script defer src="./js/phone.js"></script>
      <title>Контакты - Language to go</title>
 {% endblock %}
 
@@ -61,7 +62,7 @@
                                                   </div>
                                                   <div class="form__part">
                                                        <label>Имя</label>
-                                                       <input type="text" placeholder="+7(___)___-__-__">
+                                                       <input type="text" placeholder="+7(___)___-__-__" id="phone__input">
                                                   </div>
                                              </div>
                                              <div class="form__row">
