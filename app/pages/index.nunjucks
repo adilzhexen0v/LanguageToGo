@@ -3,6 +3,7 @@
 {% block head %}
      <link rel="stylesheet" href="./css/main.css">
      <script defer src="./js/faq.js"></script>
+     <script defer src="./js/main.js"></script>
      <title>Language to go</title>
 {% endblock %}
 

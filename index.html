@@ -9,32 +9,17 @@
      
      <link rel="stylesheet" href="./css/main.css">
      <script defer src="./js/faq.js"></script>
+     <script defer src="./js/main.js"></script>
      <title>Language to go</title>
 
      <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
      <script src="https://use.fontawesome.com/ab2012437d.js"></script>
 </head>
 <body>
-     <header>
-          <nav>
-               <div class="nav__part">
-                    <a href="./index.html" class="nav__logo"><img src="./img/logo.png" alt="logo"></a>
-                    <a href="./catalog.html" class="nav__link">Курсы</a>
-                    <a href="./about_us.html" class="nav__link">О нас</a>
-                    <a href="./news.html" class="nav__link">Блог</a>
-                    <a href="./faq.html" class="nav__link">FAQ</a>
-                    <a href="./contact.html" class="nav__link">Контакты</a>
-                    <a href="./support.html" class="nav__link">Служба поддержки</a>
-               </div>
-               <div class="nav__part">
-                    <div class="nav__btn">Войти</div>
-               </div>
-          </nav>
-     </header>
      <div class="modal__container" id="login__modal">
           <div class="modal modal__blue">
                <div class="modal__header">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <i class="fa fa-times close__btn" aria-hidden="true" id="close"></i>
                </div>
                <div class="modal__body">
                     <div class="modal__body__part" id="small__part">
@@ -49,7 +34,7 @@
                               <input type="text" name="email" placeholder="Введите пароль">
                               <input type="submit" value="Войти" id="login__btn">
                          </form>
-                         <p>Если у вас нет аккаунта: <span id="login__open" class="link">Регистрация</span></p>
+                         <p>Если у вас нет аккаунта: <span id="register__open" class="link">Регистрация</span></p>
                     </div>    
                </div>
           </div>
@@ -57,7 +42,7 @@
      <div class="modal__container" id="register__modal">
           <div class="modal modal__red">
                <div class="modal__header">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <i class="fa fa-times close__btn" aria-hidden="true"></i>
                </div>
                <div class="modal__body">
                     <div class="modal__body__part" id="large__part">
@@ -73,7 +58,7 @@
                               <input type="text" name="email" placeholder="Введите пароль">
                               <input type="submit" value="Зарегистрироваться" id="register__btn">
                          </form>
-                         <p>Если у вас уже есть аккаунт: <span id="register__open" class="link">Авторизация</span></p>
+                         <p>Если у вас уже есть аккаунт: <span id="login__open" class="link">Авторизация</span></p>
                     </div> 
                     <div class="modal__body__part" id="small__part">
                          <img src="./img/home/promo.png" alt="register">
@@ -81,6 +66,22 @@
                </div>
           </div>
      </div>
+     <header>
+          <nav>
+               <div class="nav__part">
+                    <a href="./index.html" class="nav__logo"><img src="./img/logo.png" alt="logo"></a>
+                    <a href="./catalog.html" class="nav__link">Курсы</a>
+                    <a href="./about_us.html" class="nav__link">О нас</a>
+                    <a href="./news.html" class="nav__link">Блог</a>
+                    <a href="./faq.html" class="nav__link">FAQ</a>
+                    <a href="./contact.html" class="nav__link">Контакты</a>
+                    <a href="./support.html" class="nav__link">Служба поддержки</a>
+               </div>
+               <div class="nav__part">
+                    <div class="nav__btn" id="login">Войти</div>
+               </div>
+          </nav>
+     </header>
       
           <main>
           <section class="header">
@@ -576,6 +577,6 @@
                </div>
           </div>
      </div>
-     <script src="./js/main.js"></script>
+     <script src="./js/script.js"></script>
 </body>
 </html>
