@@ -31,7 +31,56 @@
                </div>
           </nav>
      </header>
-
+     <div class="modal__container" id="login__modal">
+          <div class="modal modal__blue">
+               <div class="modal__header">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+               </div>
+               <div class="modal__body">
+                    <div class="modal__body__part" id="small__part">
+                         <img src="./img/support/support_item.png" alt="register">
+                    </div>
+                    <div class="modal__body__part" id="large__part">
+                         <div class="modal__title">Авторизация</div>
+                         <form action="#!">
+                              <label>E-mail</label>
+                              <input type="text" name="email" placeholder="Введите e-mail">
+                              <label>Пароль</label>
+                              <input type="text" name="email" placeholder="Введите пароль">
+                              <input type="submit" value="Войти" id="login__btn">
+                         </form>
+                         <p>Если у вас нет аккаунта: <span id="login__open" class="link">Регистрация</span></p>
+                    </div>    
+               </div>
+          </div>
+     </div>
+     <div class="modal__container" id="register__modal">
+          <div class="modal modal__red">
+               <div class="modal__header">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+               </div>
+               <div class="modal__body">
+                    <div class="modal__body__part" id="large__part">
+                         <div class="modal__title">Регистрация</div>
+                         <form action="#!">
+                              <label>Имя</label>
+                              <input type="text" name="name" placeholder="Введите имя">
+                              <label>Фамилия</label>
+                              <input type="text" name="surname" placeholder="Введите фамилию">
+                              <label>E-mail</label>
+                              <input type="text" name="email" placeholder="Введите e-mail">
+                              <label>Пароль</label>
+                              <input type="text" name="email" placeholder="Введите пароль">
+                              <input type="submit" value="Зарегистрироваться" id="register__btn">
+                         </form>
+                         <p>Если у вас уже есть аккаунт: <span id="register__open" class="link">Авторизация</span></p>
+                    </div> 
+                    <div class="modal__body__part" id="small__part">
+                         <img src="./img/home/promo.png" alt="register">
+                    </div>   
+               </div>
+          </div>
+     </div>
       
           <main>
           <section class="header">

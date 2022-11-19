@@ -543,3 +543,106 @@ nav{
           background-color: $lightBlue;
      }
 }
+
+/* Modal */
+.modal{
+     padding: 40px;
+     border-radius: 32px;
+     width: 800px;
+     &__title{
+          text-align: center;
+          @include text(28px, 36px, 700, $black);
+     }
+     &__header{
+          @include flex($jc: flex-end);
+     }
+     &__body{
+          width: 100%;
+          @include flex();
+          gap: 40px;
+          &__part{
+               width: 50%;
+               img{
+                    width: 100%;
+               }
+          }
+     }
+     p{
+          margin-top: 8px;
+          @include text(14px, 20px, 400, $gray);   
+     }    
+     .link{
+          display: inline-block;
+          @include text(14px, 20px, 700, $blue);
+          transition: 0.25s ease;
+          &:hover{
+               opacity: 0.8;
+               cursor: pointer;
+          }
+     }
+     &__container{
+          display: none;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+     }
+     form{
+          label{
+               display: block;
+               @include text(16px, 24px, 600, $black);
+          }
+          input[type="text"]{
+               width: 100%;
+               padding: 12px 18px;
+               border-radius: 8px;
+               border: 2px solid #f2f2f2;
+               background: white;
+               margin-bottom: 12px;
+          }
+          input[type="submit"]{
+               width: 100%;
+               margin-top: 6px;
+          }
+     }
+     #large__part{
+          width: 55%;
+     }
+     #small__part{
+          width: 45%;
+     }
+     .fa-times{
+          font-size: 20px;
+          color: $black;
+          transition: 0.2s ease;
+          &:hover{
+               cursor: pointer;
+               color:$gray;
+          }
+     }
+     &__red{
+          background-color: #FDEDE4;
+     }
+     &__blue{
+          background-color: $secondaryBlue;
+     }
+}
+
+#register{
+     &__btn{
+          @include btn($bg:$red);
+     }
+     &__open{
+          color: $red;
+     }
+}
+
+#login{
+     &__btn{
+          @include btn($bg:$blue);
+     }
+     &__open{
+          color: $blue;
+     }
+}
