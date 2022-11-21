@@ -2,6 +2,8 @@
 
 {% block head %}
      <link rel="stylesheet" href="./css/about_us.css">
+     <script defer src="./js/phone.js"></script>
+     <script defer src="./js/register.js"></script>
      <title>О нас - Language to go</title>
 {% endblock %}
 

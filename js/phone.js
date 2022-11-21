@@ -10,8 +10,10 @@ window.addEventListener('DOMContentLoaded', () => {
      };
      const phoneIndexes = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
      const phoneValuesIndexes = [3, 4, 5, 7, 8, 9, 11, 12, 14, 15];
-
+     
+     
      phoneInput.addEventListener('input', (e) => {
+          console.log(phoneString.match(regExp).length);
           if (phoneString.match(regExp) === null) {
                changePhoneString(15, '_');
           } 
@@ -32,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
                }
           }
-
      });
+
+     
 });

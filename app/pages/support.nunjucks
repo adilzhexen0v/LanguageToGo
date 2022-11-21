@@ -3,6 +3,7 @@
 {% block head %}
      <link rel="stylesheet" href="./css/support.css">
      <script defer src="./js/phone.js"></script>
+     <script defer src="./js/support.js"></script>
      <title>Служба поддержки - Language to go</title>
 {% endblock %}
 
@@ -31,7 +32,7 @@
                                    <div class="support__text">
                                         Оставьте заявку и мы постараемся вам помочь
                                    </div>
-                                   <form action="#!">
+                                   <form action="#!" class="form">
                                         <div class="form__grid">
                                              <div class="form__row">
                                                   <div class="form__part">

@@ -425,6 +425,8 @@ nav .nav__link:hover {
   background: #EFEFFF;
   padding: 90px 100px;
   border-radius: 40px;
+  position: relative;
+  z-index: 10;
 }
 .register__part:first-child {
   width: 50%;
@@ -981,6 +983,9 @@ nav .nav__link:hover {
 }
 .modal__blue {
   background-color: #DEF1FF;
+}
+.modal__light {
+  background-color: #EFEFFF;
 }
 
 #register__btn {

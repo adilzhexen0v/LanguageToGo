@@ -3,6 +3,8 @@
 {% block head %}
      <link rel="stylesheet" href="./css/course.css">
      <script defer src="./js/course.js"></script>
+     <script defer src="./js/phone.js"></script>
+     <script defer src="./js/register.js"></script>
      <title>Немецский для начинающих - Language to go</title>
 {% endblock %}
 

@@ -4,6 +4,8 @@
      <link rel="stylesheet" href="./css/main.css">
      <script defer src="./js/faq.js"></script>
      <script defer src="./js/main.js"></script>
+     <script defer src="./js/phone.js"></script>
+     <script defer src="./js/register.js"></script>
      <title>Language to go</title>
 {% endblock %}
 
@@ -363,7 +365,7 @@
                     <div class="faq__row">
                          <div class="faq__part">
                               <div class="title">Отвечаем на частые вопросы</div>
-                              <div class="btn faq__btn">Задать вопрос</div>
+                              <a href="./support.html" class="btn faq__btn">Задать вопрос</a>
                               <img src="./img/home/faq.png" alt="faq">
                          </div>
                          <div class="faq__part">

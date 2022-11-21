@@ -263,6 +263,8 @@ nav{
           background: $lightBlue;
           padding: 90px 100px;
           border-radius: 40px;
+          position: relative;
+          z-index: 10;
      }
      &__part:first-child{
           width: 50%;
@@ -628,6 +630,9 @@ nav{
      }
      &__blue{
           background-color: $secondaryBlue;
+     }
+     &__light{
+          background-color: $lightBlue;
      }
 }
 
