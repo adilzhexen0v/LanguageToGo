@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixins";
+
+.subtitle{
+     max-width: 585px;
+}
+
+.support{
+     &__row{
+          @include flex($ai: flex-start);
+          gap: 40px;
+     }
+     &__part{
+          &:first-child{
+               width: 67%;
+          }
+          &:last-child{
+               position: relative;
+               width: 33%;
+          }
+          img{
+               position: absolute;
+               right: 0;
+          }
+     }
+     &__title{
+          @include text(24px, 32px, 700, $black);
+          margin-bottom: 12px;
+     }
+     &__text{
+          @include text(16px, 24px, 500, $gray);
+          letter-spacing: 0.02em;
+          padding-bottom: 30px;
+     }
+     &__form{
+          margin: 40px 0;
+     }
+}
+
