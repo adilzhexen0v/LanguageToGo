@@ -6,5 +6,5 @@ gulp.task('build', function(){
      .pipe(nunjucksRender({
           path: ['./app/templates']
      }))
-     .pipe(gulp.dest('./'));
+     .pipe(gulp.dest('./dist/'));
 });
