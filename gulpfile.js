@@ -1,5 +1,5 @@
-const nunjucksRender = require('gulp-nunjucks-render');
 const gulp = require('gulp');
+const nunjucksRender = require('gulp-nunjucks-render');
 
 gulp.task('build', function(){
      return gulp.src('./app/pages/*.nunjucks')
