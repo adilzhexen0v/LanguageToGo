@@ -130,3 +130,216 @@
 .teachers__links i:hover {
   font-size: 20px;
 }
+
+@media screen and (max-width: 1600px) {
+  .teachers__list {
+    gap: 30px;
+  }
+  .teachers__img {
+    height: 300px;
+  }
+  .teachers__name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .teachers__subject {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .about__us {
+    margin-bottom: 120px;
+  }
+  .about__us__row {
+    margin-bottom: 60px;
+  }
+  .about__us__part:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .about__us__part .title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 20px;
+  }
+  .about__us__part .text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .teachers {
+    margin-bottom: 80px;
+  }
+  .teachers__img {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__us__part .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .teachers .title {
+    max-width: 640px;
+  }
+  .teachers__img {
+    height: 237px;
+  }
+  .teachers__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .teachers__subject {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .teachers__list {
+    display: -ms-grid;
+    display: grid;
+    gap: 0;
+    grid-gap: 30px;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 30px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .teachers__list > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .teachers__list > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .teachers__list > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .teachers__list > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .teachers__list > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .teachers__list > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .teachers__item {
+    width: 100%;
+  }
+  .teachers__item:last-child {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-column-span: 1;
+    grid-column-end: 3;
+  }
+}
+@media screen and (max-width: 750px) {
+  .teachers__list {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .teachers__img {
+    height: 330px;
+  }
+  .about__us__row {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__us__row:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about__us__part {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+  .about__us__part .text {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .about__us {
+    margin-bottom: 80px;
+  }
+  .teachers .title {
+    margin-top: 60px;
+  }
+  .teachers .subtitle {
+    margin-bottom: 60px;
+  }
+  .teachers__img {
+    height: 279px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .teachers {
+    margin-bottom: 50px;
+  }
+  .teachers__img {
+    height: 245px;
+    margin-bottom: 16px;
+  }
+  .teachers__img img {
+    border-width: 15px;
+  }
+  .teachers__bg {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    border-radius: 30px;
+  }
+  .about__us__part .title {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+  .about__us__part .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .teachers__img {
+    height: 210px;
+  }
+  .teachers__subject {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 440px) {
+  .teachers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teachers__img {
+    height: 393px;
+  }
+  .teachers__subject {
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .teachers__img {
+    height: 327px;
+  }
+}

@@ -25,6 +25,7 @@
 
 body {
   font-family: "Gilroy", sans-serif;
+  overflow-x: hidden;
 }
 
 .none {
@@ -1140,6 +1141,10 @@ footer {
     font-size: 36px !important;
     line-height: 46px !important;
   }
+  .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .card {
     max-width: 330px;
     padding: 30px;
@@ -1353,44 +1358,11 @@ footer {
   .register__part:last-child {
     width: 40%;
   }
-}
-@media screen and (max-width: 960px) {
-  .container {
-    width: 720px;
-  }
-  .title {
-    font-size: 32px !important;
-    line-height: 36px !important;
-  }
-  .btn,
-.btn__inverse {
-    font-size: 14px;
-    padding: 11px 15px;
-  }
-  nav {
-    padding: 16px 24px;
-  }
-  #login {
-    font-size: 14px;
-    padding: 12px 18px;
-  }
-  .register__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .register__part:first-child {
-    width: 100%;
-  }
-  .register__part:last-child {
-    display: none;
-  }
   .footer {
     padding: 40px 0;
   }
   .footer .container {
-    width: 576px;
+    width: 768px;
   }
   .footer__row {
     display: -ms-grid;
@@ -1440,9 +1412,45 @@ footer {
     text-align: right;
   }
 }
+@media screen and (max-width: 960px) {
+  .container {
+    width: 720px;
+  }
+  .title {
+    font-size: 32px !important;
+    line-height: 36px !important;
+  }
+  .btn,
+.btn__inverse {
+    font-size: 14px;
+    padding: 11px 15px;
+  }
+  nav {
+    padding: 16px 24px;
+  }
+  #login {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+  .register__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .register__part:first-child {
+    width: 100%;
+  }
+  .register__part:last-child {
+    display: none;
+  }
+}
 @media screen and (max-width: 750px) {
   .container {
     width: 640px;
+  }
+  .footer .container {
+    width: 512px;
   }
   .title {
     font-size: 28px;
@@ -1479,6 +1487,11 @@ footer {
   .title {
     font-size: 27px !important;
     line-height: 30px !important;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
   }
   .btn,
 .btn__inverse {
@@ -1543,8 +1556,9 @@ footer {
     width: 100vw;
     height: 100vh;
     padding: 48px;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
+    opacity: 0;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .mobile__menu__part {
     position: relative;
@@ -1686,6 +1700,7 @@ footer {
     padding: 9px 12px;
   }
   .register__part h2 {
+    text-align: center;
     font-size: 22px;
     line-height: 25px;
   }

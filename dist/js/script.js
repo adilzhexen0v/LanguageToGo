@@ -14,10 +14,16 @@ window.addEventListener('DOMContentLoaded', () => {
           mobileMenuChecker++;
           if (mobileMenuChecker % 2 === 1) {
                mobileMenu.style.display = 'flex';
-               document.body.style.overflow = 'hidden';
+               setTimeout(() => {
+                    mobileMenu.style.opacity = 1;
+                    document.body.style.overflow = 'hidden'; 
+               }, 1);
           } else {
-               mobileMenu.style.display = 'none';
+               mobileMenu.style.opacity = 0;
                document.body.style.overflow = 'auto';
+               setTimeout(() => {
+                    mobileMenu.style.display = 'none';
+               }, 200);
           }
      });
      /* Modal */

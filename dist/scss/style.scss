@@ -24,6 +24,7 @@
 
 body{
      font-family: 'Gilroy', sans-serif;
+     overflow-x: hidden;
 }
 
 .none{
@@ -755,6 +756,10 @@ footer{
           font-size: 36px !important;
           line-height: 46px !important;
      }
+     .subtitle{
+          font-size: 18px;
+          line-height: 26px;
+     }
      // Card
      .card{
           max-width: 330px;
@@ -1006,6 +1011,33 @@ footer{
                }
           }
      }
+     // Footer
+     .footer{
+          padding: 40px 0;
+          .container{
+               width: $containerWidth * 0.8;
+          }
+          &__row{
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-template-rows: repeat(2, 1fr);
+               grid-gap: 30px;
+          }
+          &__part{
+               &:nth-child(even){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+               }
+          }
+          &__bottom__row{
+               row-gap: 12px;
+               flex-direction: column;
+          }
+          &__contact{
+               text-align: right;
+          }
+     }
 }
 
 @media screen and (max-width: 960px) {
@@ -1044,33 +1076,7 @@ footer{
                }
           }
      }
-     // Footer
-     .footer{
-          padding: 40px 0;
-          .container{
-               width: $containerWidth * 0.8;
-          }
-          &__row{
-               display: grid;
-               grid-template-columns: repeat(2, 1fr);
-               grid-template-rows: repeat(2, 1fr);
-               grid-gap: 30px;
-          }
-          &__part{
-               &:nth-child(even){
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-               }
-          }
-          &__bottom__row{
-               row-gap: 12px;
-               flex-direction: column;
-          }
-          &__contact{
-               text-align: right;
-          }
-     }
+     
 }
 
 @media screen and (max-width:750px) {
@@ -1078,6 +1084,11 @@ footer{
      $containerWidth: 640px;
      .container{
           width: $containerWidth;
+     }
+     .footer{
+          .container{
+               width: $containerWidth * 0.8;
+          }
      }
      .title{
           font-size: 28px;
@@ -1125,6 +1136,11 @@ footer{
      .title{
           font-size: 27px !important;
           line-height: 30px !important;
+     }
+     .subtitle{
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 40px;
      }
      .btn,
      .btn__inverse{
@@ -1192,7 +1208,8 @@ footer{
           width: 100vw;
           height: 100vh;
           padding: 48px;
-          transition: 0.3s ease;
+          opacity: 0;
+          transition: 0.2s ease;
           &__part{
                position: relative;
                z-index: 1001;
@@ -1334,6 +1351,7 @@ footer{
      .register{
           &__part{
                h2{
+                    text-align: center;
                     font-size: 22px;
                     line-height: 25px;
                }
