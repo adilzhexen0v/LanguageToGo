@@ -6,6 +6,7 @@
      <script defer src="./js/main.js"></script>
      <script defer src="./js/phone.js"></script>
      <script defer src="./js/register.js"></script>
+     <script defer src="./js/slider.js"></script>
      <title>Language to go</title>
 {% endblock %}
 
