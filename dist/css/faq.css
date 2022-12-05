@@ -2,15 +2,9 @@
   background: #EFEFFF;
   padding: 40px 100px;
   border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 160px;
 }
 .ask .subtitle {
@@ -82,25 +76,13 @@
   .ask {
     gap: 40px;
     padding: 32px 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .ask__part:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
   .ask .btn {
     margin: 0;
@@ -120,3 +102,4 @@
     display: none;
   }
 }
+/*# sourceMappingURL=faq.css.map */

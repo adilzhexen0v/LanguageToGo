@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "static/variables";
+@import "static/mixins";
 
 .catalog__btns{
      margin-bottom: 50px;
@@ -38,6 +38,13 @@
           flex-direction: column;
           gap: 40px;
      }
+     &__flex{
+          margin: 40px 0;
+          @include flex();
+          h4{
+               @include text(24px, 32px, 700, $black);
+          }
+     }
 }
 
 .article{
@@ -48,6 +55,25 @@
      &__content{
           @include text(16px, 24px, 500, $gray);
           margin-bottom: 30px;
+     }
+     &__type{
+          margin: 12px 0;
+          @include flex();
+     }
+     &__socials{
+          @include flex($jc:flex-end);
+          gap: 12px;
+          h6{
+               display: inline-block;
+               @include text(16px, 24px, 500, $black);
+               margin-right: 4px;
+          }
+          a{
+               i{
+                    color: $purple;
+                    font-size: 20px;
+               }
+          }
      }
 }
 
@@ -87,6 +113,28 @@
           }
           &__item{
                width: 100%;
+          }
+     }
+}
+
+@media screen and (max-width: 520px) {
+     .article{
+          &__type{
+               flex-direction: column;
+               .news__item__type{
+                    align-self: flex-start;
+               }
+          }
+          &__socials{
+               align-self: flex-end;
+          }
+     }
+}
+
+@media screen and (max-width: 380px){
+     .article{
+          &__socials{
+               margin-top: 12px;
           }
      }
 }

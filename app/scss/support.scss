@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "static/variables";
+@import "static/mixins";
 
 .subtitle{
      max-width: 585px;
@@ -37,3 +37,29 @@
      }
 }
 
+@media screen and (max-width: 960px) {
+     .support{
+          &__part{
+               .subtitle{
+                    max-width: none;
+               }
+               &:first-child{
+                    width: 100%;
+               }
+               &:last-child{
+                    display: none;
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 640px) {
+     main{
+          margin-bottom: 60px;
+     }
+     .support{
+          &__text{
+               padding-bottom: 0;
+          }
+     }
+}

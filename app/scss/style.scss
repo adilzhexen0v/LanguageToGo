@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "static/variables";
+@import "static/mixins";
 
 @import url('../css/reset.css');
 
@@ -1317,6 +1317,16 @@ footer{
           }
           &__contact{
                text-align: center;
+          }
+     }
+     // Form
+     .form{
+          &__row{
+               &:first-child{
+                    flex-direction: column;
+                    gap: 20px;
+               }
+               margin-bottom: 20px;
           }
      }
 }
