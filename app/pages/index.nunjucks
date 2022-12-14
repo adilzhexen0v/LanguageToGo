@@ -2,11 +2,7 @@
 
 {% block head %}
      <link rel="stylesheet" href="./css/main.css">
-     <script defer src="./js/faq.js"></script>
      <script defer src="./js/main.js"></script>
-     <script defer src="./js/phone.js"></script>
-     <script defer src="./js/register.js"></script>
-     <script defer src="./js/slider.js"></script>
      <title>Language to go</title>
 {% endblock %}
 

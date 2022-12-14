@@ -1,10 +1,14 @@
-window.addEventListener('DOMContentLoaded', () => {
+function slider({
+     sliderContainerSelector, 
+     sliderCardsSelector, 
+     previousBtnSelector, 
+     nextBtnSelector
+}){
      const windowWidth = window.screen.width;
-     const slider = document.querySelector('.all__courses__slider');
-     const sliderContainer = document.querySelector('.all__courses__row');
-     const sliderCards = document.querySelectorAll('.all__courses__card');
-     const prevBtn = document.querySelector('#prev__btn');
-     const nextBtn = document.querySelector('#next__btn');
+     const sliderContainer = document.querySelector(sliderContainerSelector);
+     const sliderCards = document.querySelectorAll(sliderCardsSelector);
+     const prevBtn = document.querySelector(previousBtnSelector);
+     const nextBtn = document.querySelector(nextBtnSelector);
      let sliderGap = 40;
      if (windowWidth <= 660) {
           sliderGap = 20;
@@ -19,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
      } else if (windowWidth <= 1200) {
           maxOffset = 4;
      }
-     console.log(sliderCardWidth);
      prevBtn.addEventListener('click', () => {
           if (sliderOffset != 0) {
                sliderOffset--;
@@ -37,4 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
           console.log(moveWidth);
           sliderContainer.style.transform = `translateX(-${moveWidth}px)`;
      };
-});
+}
+
+export default slider;

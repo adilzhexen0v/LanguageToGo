@@ -1,5 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-     const phoneInput = document.querySelector('#phone__input');
+function phoneValidator({
+     inputSelector
+}){
+     const phoneInput = document.querySelector(inputSelector);
      let phoneString = '+7(___)___-__-__';
      const regExp = /_/g;
      const changePhoneString = (index, val) => {
@@ -35,6 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
                }
           }
      });
+}
 
-     
-});
+export default phoneValidator;

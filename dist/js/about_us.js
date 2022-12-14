@@ -170,9 +170,9 @@ function registerValidator({
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!***************************!*\
-  !*** ./app/js/support.js ***!
-  \***************************/
+/*!****************************!*\
+  !*** ./app/js/about_us.js ***!
+  \****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_phone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/phone */ "./app/js/modules/phone.js");
 /* harmony import */ var _modules_register__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/register */ "./app/js/modules/register.js");
@@ -185,7 +185,7 @@ window.addEventListener('DOMContentLoaded', () => {
      });
      (0,_modules_register__WEBPACK_IMPORTED_MODULE_1__["default"])({
           closeBtnsSelector: '.close__btn',
-          lessonPopUpSelector: '#support__modal',
+          lessonPopUpSelector: '#lesson__modal',
           formSelector: '.form',
           formInputsSelector: 'input[type="text"], textarea, input[type="tel"]'
      });
@@ -194,4 +194,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=support.js.map
+//# sourceMappingURL=about_us.js.map

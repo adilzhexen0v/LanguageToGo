@@ -283,4 +283,35 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 1440px) {
+  .course__subtitle {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .course__row {
+    gap: 30px;
+  }
+  .course__part:last-child .buying {
+    padding: 30px;
+  }
+  .howitworks__item {
+    padding: 0 !important;
+    margin-bottom: 30px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__after__item {
+    font-size: 16px;
+  }
+  .program__lesson__title div:last-child .lesson__btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .program__lesson__title div:last-child .lesson__btn i {
+    color: #000 !important;
+  }
+}
 /*# sourceMappingURL=course.css.map */

@@ -1054,6 +1054,11 @@ footer{
           font-size: 14px;
           padding: 11px 15px;
      }
+     // Modal
+     .modal{
+          width: 720px;
+          padding: 32px;
+     }
      // Nav 
      nav{
           padding: 16px 24px;
@@ -1093,6 +1098,40 @@ footer{
      .title{
           font-size: 28px;
           line-height: 32px;
+     }
+     // Modal
+     .modal{
+          width: 480px;
+     }
+     #login__modal,
+     #support__modal{
+          .modal{ 
+               &__body{
+                    &__part{
+                         &:first-child{
+                              display: none;
+                         }
+                         &:last-child{
+                              width: 100%;
+                         }
+                    }
+               }
+          }
+     }
+     #register__modal,
+     #lesson__modal{
+          .modal{ 
+               &__body{
+                    &__part{
+                         &:first-child{
+                              width: 100%;
+                         }
+                         &:last-child{
+                              display: none;
+                         }
+                    }
+               }
+          }
      }
      // Nav
      nav{
@@ -1200,6 +1239,8 @@ footer{
           position: relative;
      }
      .mobile__menu{
+          position: relative;
+          z-index: 100;
           display: none;
           flex-direction: column;
           justify-content: space-between;
@@ -1271,6 +1312,15 @@ footer{
      $mb: 60px;
      .container{
           width: $containerWidth;
+     }
+     // Modal
+     .modal{
+          width: 300px;
+          padding: 24px;
+          &__title{
+               font-size: 22px;
+               line-height: 30px;
+          }
      }
      // Register
      .register{

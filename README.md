@@ -1,8 +1,28 @@
 # [Многостраничный сайт](https://adilzhexen0v.github.io/LanguageToGo/dist/) онлайн-школы иностранных языков
 - Общие/повторяющиеся стили вынесены в [style.css](https://github.com/adilzhexen0v/LanguageToGo/blob/main/dist/css/style.css)
-- Сайт адаптирован до ширины 320рх
-- Все изображени расформированы по папкам
-- Для сборки JavaScript файлов используется [Webpack](https://webpack.js.org/)
+- Сайт адаптирован до ширины 320рх;
+- Все изображени расформированы по папкaм;
+- JavaScript файлы собраны по модульной структуре с помощью [Webpack](https://github.com/adilzhexen0v/LanguageToGo/blob/main/webpack.config.js). Для запуска сборки используется команда `npx webpack`;
+```javascript
+     let path = require('path');
+     module.exports = {
+          mode: 'development',
+          entry: {
+               "main": './app/js/main.js',
+               "about_us": './app/js/about_us.js',
+               "contact": './app/js/contact.js',
+               "faq": './app/js/faq.js',
+               "support": './app/js/support.js'
+          },
+          output: {
+               filename: '[name].js',
+               path: __dirname + '/dist/js'
+          },
+          watch: true,
+          devtool: "source-map",
+          module: {}
+     };
+```
 - Для сборки HTML файлов используется [gulp-nunjucks-render](https://www.npmjs.com/package/gulp-nunjucks-render). Для запуска используется команда `gulp build-pages`. Настройка **gulp** расположена в ***gulpfile.js:***
 ```javascript
      const gulp = require('gulp');
@@ -16,7 +36,7 @@
           .pipe(gulp.dest('./dist/'));
      });
 ```
-- Для компиляции CSS файлов используется [gulp-sass](https://www.npmjs.com/package/gulp-sass). Для запуска используется команда `gulp styles-compile`. 
+- Для компиляции CSS файлов используется [gulp-sass](https://www.npmjs.com/package/gulp-sass). Для запуска используется команда `gulp styles-compile`.
 ```javascript
      const gulp = require('gulp');
      const gulpSass = require('gulp-sass')(require('sass'));

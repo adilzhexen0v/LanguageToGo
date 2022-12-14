@@ -271,7 +271,7 @@
                                         <div class="buying__item"><span>9</span>Тестов</div>
                                         <div class="buying__item"><span>4</span>Занятий с экспертом</div>
                                    </div>
-                                   <div class="btn buying__btn">Записаться на курс</div>
+                                   <a href="#register" class="btn buying__btn">Записаться на курс</a>
                               </div>
                               <div class="top">
                                    <div class="course__subtitle">Лучшие ученики</div>

@@ -231,3 +231,57 @@
           @include flex();
      }
 }
+
+@media screen and (max-width:1440px) {
+     .course{
+          &__subtitle{
+               font-size: 26px;
+               line-height: 32px;
+               margin-bottom: 24px;
+          }
+          &__row{
+               gap: 30px;
+          }
+          &__part{
+               &:last-child{
+                    .buying{
+                         padding: 30px;
+                    }
+               }
+          }
+     }
+     .howitworks{
+          &__item{
+               padding: 0 !important;
+               margin-bottom: 30px !important;
+          }
+     }
+}
+
+@media screen and (max-width:1200px) {
+     .about{
+          &__after{
+               &__item{
+                    font-size: 16px;
+               }
+          }
+     }
+     .program{
+          &__lesson{
+               &__title{
+                    div{
+                         &:last-child{
+                              .lesson__btn{
+                                   display: block;
+                                   width: 24px;
+                                   height: 24px;
+                                   i{
+                                        color: #000 !important;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
