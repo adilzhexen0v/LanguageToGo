@@ -114,14 +114,16 @@
                          <div class="catalog__part">
                               <div class="level">
                                    <div class="level__title">Уровень</div>
-                                   <div class="level__row">
-                                        <input type="checkbox" name="level"> Начальный
-                                   </div>
-                                   <div class="level__row">
-                                        <input type="checkbox" name="level"> Средний
-                                   </div>
-                                   <div class="level__row">
-                                        <input type="checkbox" name="level"> Высокий
+                                   <div class="level__rows">
+                                        <div class="level__row">
+                                             <input type="checkbox" name="level"> Начальный
+                                        </div>
+                                        <div class="level__row">
+                                             <input type="checkbox" name="level"> Средний
+                                        </div>
+                                        <div class="level__row">
+                                             <input type="checkbox" name="level"> Высокий
+                                        </div>
                                    </div>
                               </div>
                          </div>

@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
            navLoginBtn = document.querySelector('#login'),
            loginModal = document.querySelector('#login__modal'),
            loginOpen = document.querySelector('#login__open'),
+           loginOpenMobile = document.querySelector('#login__mob'),
            registerModal = document.querySelector('#register__modal'),
            registerOpen = document.querySelector('#register__open');
      const openModal = (modal) => {
@@ -49,6 +50,10 @@ window.addEventListener('DOMContentLoaded', () => {
           openModal(loginModal);
      });
      loginOpen.addEventListener('click', () => {
+          closeModal();
+          openModal(loginModal);
+     });
+     loginOpenMobile.addEventListener('click', () => {
           closeModal();
           openModal(loginModal);
      });

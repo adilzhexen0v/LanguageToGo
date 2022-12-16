@@ -948,22 +948,22 @@ footer {
     border-radius: 10px;
   }
   .card__title {
-    font-size: 22px;
+    font-size: 22px !important;
     margin: 16px 0;
   }
   .card__length {
-    font-size: 14px;
-    margin-bottom: 4px;
+    font-size: 14px !important;
+    margin-bottom: 4px !important;
   }
   .card__modules {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
   }
   .card__links .card__link {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .card__links .card__price {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .comment__author__stars {
     margin-bottom: 16px;
@@ -1212,6 +1212,17 @@ footer {
   .register__part:last-child {
     display: none;
   }
+  .catalog {
+    margin-bottom: 60px;
+  }
+  .catalog__btns {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .catalog__btn {
+    padding: 5px 16px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 750px) {
   .container {
@@ -1252,19 +1263,19 @@ footer {
     font-size: 18px !important;
   }
   .card__title {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .card__length {
-    font-size: 13px;
+    font-size: 13px !important;
   }
   .card__modules {
-    font-size: 13px;
+    font-size: 13px !important;
   }
   .card__links .card__link {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .card__links .card__price {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 660px) {
@@ -1456,6 +1467,13 @@ footer {
   .footer .container {
     width: 360px;
   }
+  .catalog__btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog__btn {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 380px) {
   .container {
@@ -1477,6 +1495,9 @@ footer {
   }
   .footer .container {
     width: 300px;
+  }
+  .catalog__btns {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */

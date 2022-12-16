@@ -2,9 +2,8 @@
   "name": "languagetogo",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpgile.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

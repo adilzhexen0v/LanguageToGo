@@ -766,23 +766,23 @@ footer{
           padding: 30px;
           border-radius: 10px;
           &__title{
-               font-size: 22px;
+               font-size: 22px !important;
                margin: 16px 0;
           }
           &__length{
-               font-size: 14px;
-               margin-bottom: 4px;
+               font-size: 14px !important;
+               margin-bottom: 4px !important;
           }
           &__modules{
-               font-size: 14px;
-               margin-bottom: 20px;
+               font-size: 14px !important;
+               margin-bottom: 20px !important;
           } 
           &__links{
                .card__link{
-                    font-size: 16px;
+                    font-size: 16px !important;
                }
                .card__price{
-                    font-size: 18px;
+                    font-size: 18px !important;
                }
           }
      }
@@ -1081,7 +1081,18 @@ footer{
                }
           }
      }
-     
+     // Catalog Btns
+     .catalog{
+          margin-bottom: 60px;
+          &__btns{
+               gap: 12px;
+               margin-bottom: 24px;
+          }
+          &__btn{
+               padding: 5px 16px;
+               font-size: 14px; 
+          }
+     }
 }
 
 @media screen and (max-width:750px) {
@@ -1147,20 +1158,20 @@ footer{
      // Card
      .card{
           &__title{
-               font-size: 18px;
+               font-size: 18px !important;
           }
           &__length{
-               font-size: 13px;
+               font-size: 13px !important;
           }
           &__modules{
-               font-size: 13px;
+               font-size: 13px !important;
           }
           &__links{
                .card__link{
-                    font-size: 14px;
+                    font-size: 14px !important;
                }
                .card__price{
-                    font-size: 16px;
+                    font-size: 16px !important;
                }
           }
      }
@@ -1391,6 +1402,16 @@ footer{
                width: $containerWidth;
           }
      }
+     // Catalog Btns
+     .catalog{
+          &__btns{
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+          }
+          &__btn{
+               text-align: center;
+          }
+     }
 }
 
 @media screen and (max-width:380px) {
@@ -1420,6 +1441,12 @@ footer{
      .footer{
           .container{
                width: $containerWidth;
+          }
+     }
+     // Catalog Btns
+     .catalog{
+          &__btns{
+               grid-template-columns: repeat(2, 1fr);
           }
      }
 }

@@ -92,3 +92,78 @@
 .hide{
      display: none;
 }
+
+@media screen and (max-width:1440px) {
+     .catalog{
+          &__part{
+               &:first-child{
+                    grid-gap: 30px;
+               }
+          }
+          &__item{
+               padding: 30px;
+          }
+     }
+     
+}
+
+@media screen and (max-width:960px) {
+     .catalog{
+          &__list{
+               flex-direction: column-reverse;
+          }
+          &__part{
+               &:first-child{
+                    width: 100%;
+               }
+               &:last-child{
+                    width: 100%;
+                    position: relative;
+               }
+          }
+          .level{
+               padding: 0;
+               margin-bottom: 20px;
+               &__rows{
+                    display: flex;
+                    gap: 30px;
+               }
+               &__row{
+                    margin-bottom: 12px;
+                    font-size: 14px;
+                    input[type="checkbox"]{
+                         width: 18px;
+                         height: 18px;
+                         margin-right: 12px;
+                    }
+               }
+          }
+     }
+}
+
+@media screen and (max-width: 660px) {
+     .catalog{
+          &__part{
+               &:first-child{
+                    grid-template-columns: 1fr;
+               }
+          }
+     }
+}
+
+@media screen and (max-width:440px) {
+     .title{
+          margin-bottom: 20px;
+     }
+}
+
+@media screen and (max-width: 380px) {
+     .catalog{
+          .level{
+               &__rows{
+                    flex-direction: column;
+                    gap: 0;
+               }
+          }
+     }
+}
